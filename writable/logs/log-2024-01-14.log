@@ -1,0 +1,203 @@
+CRITICAL - 2024-01-14 00:20:50 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/Home" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Home')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(39): redirect('/Home', 'auto')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 00:21:21 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/Home" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Home')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(39): redirect('/Home', 'location')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 00:59:03 --> Error: Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+in APPPATH\Controllers\CtrlSession.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:04:33 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "http://127.0.0.2/GSB3/public/" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://127.0.0.2/GSB3/public/')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(40): redirect('http://127.0.0.2/GSB3/public/', 'auto')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:04:49 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "http://127.0.0.2/GSB3/public/" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://127.0.0.2/GSB3/public/')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(40): redirect('http://127.0.0.2/GSB3/public/', 'location')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:05:22 --> Error: Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+in APPPATH\Controllers\CtrlSession.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:07:30 --> Error: Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+in APPPATH\Controllers\CtrlSession.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:17:01 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\CtrlSession.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlSession.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CtrlSession')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CtrlSession')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\CtrlSession', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:17:10 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\CtrlSession.php on line 37.
+ 1 APPPATH\Controllers\CtrlSession.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlSession.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:21:38 --> ParseError: syntax error, unexpected token "}"
+in APPPATH\Controllers\CtrlSession.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlSession.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CtrlSession')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CtrlSession')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\CtrlSession', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:24:13 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/article/13" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/article/13')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(37): redirect('/article/13', 'location', 301)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:24:32 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/Login/" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Login/')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(37): redirect('/Login/', 'location', 301)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:24:40 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/Login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Login')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(37): redirect('/Login', 'location', 301)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:24:48 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "Login/" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Login/')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(37): redirect('Login/', 'location', 301)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:25:28 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "Login/" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Login/')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\CtrlSession.php(37): redirect('Login/', 'location', 301)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:36:45 --> ErrorException: Undefined array key "uc"
+in APPPATH\Controllers\Home.php on line 16.
+ 1 APPPATH\Controllers\Home.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "uc"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\Home.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:44:33 --> ErrorException: include(controleurs/c_etatFrais.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 26.
+ 1 APPPATH\Controllers\Home.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(controleurs/c_etatFrais.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\Home.php', 26)
+ 2 APPPATH\Controllers\Home.php(26): include()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:59:07 --> ErrorException: Undefined array key "mdp"
+in APPPATH\Models\Monmodele.php on line 18.
+ 1 APPPATH\Models\Monmodele.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mdp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Models\\Monmodele.php', 18)
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:00:31 --> ErrorException: Undefined array key "mdp"
+in APPPATH\Models\Monmodele.php on line 16.
+ 1 APPPATH\Models\Monmodele.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mdp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Models\\Monmodele.php', 16)
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:01:49 --> ErrorException: Undefined array key "mdp"
+in APPPATH\Models\Monmodele.php on line 16.
+ 1 APPPATH\Models\Monmodele.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mdp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Models\\Monmodele.php', 16)
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:02:52 --> ErrorException: Undefined array key "mdp"
+in APPPATH\Models\Monmodele.php on line 16.
+ 1 APPPATH\Models\Monmodele.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mdp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Models\\Monmodele.php', 16)
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:03:16 --> ErrorException: Undefined array key "mdp"
+in APPPATH\Models\Monmodele.php on line 16.
+ 1 APPPATH\Models\Monmodele.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mdp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Models\\Monmodele.php', 16)
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:04:40 --> ErrorException: Undefined array key "mdp"
+in APPPATH\Models\Monmodele.php on line 16.
+ 1 APPPATH\Models\Monmodele.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mdp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Models\\Monmodele.php', 16)
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:04:50 --> ErrorException: Undefined array key "mdp"
+in APPPATH\Models\Monmodele.php on line 16.
+ 1 APPPATH\Models\Monmodele.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mdp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Models\\Monmodele.php', 16)
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:05:03 --> ErrorException: Undefined array key "mdp"
+in APPPATH\Models\Monmodele.php on line 16.
+ 1 APPPATH\Models\Monmodele.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mdp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Models\\Monmodele.php', 16)
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

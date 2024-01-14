@@ -1,0 +1,221 @@
+CRITICAL - 2024-01-13 15:52:59 --> Error: Class "App\Models\Mesfonctions" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 15:53:17 --> Error: Class "App\Models\Mesfonctions" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 15:54:41 --> Error: Class "App\Models\Mesfonctions" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:02:00 --> Error: Class "App\Models\Mesfonctions" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:03:38 --> Error: Class "App\Models\Mesfonctions" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:05:42 --> CodeIgniter\Files\Exceptions\FileNotFoundException: File not found: "img/logo.png"
+in SYSTEMPATH\Helpers\html_helper.php on line 147.
+ 1 SYSTEMPATH\Helpers\html_helper.php(147): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('img/logo.png')
+ 2 APPPATH\Views\view_logo.php(4): img_data('img/logo.png')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_logo.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_logo', [], true)
+ 6 APPPATH\Controllers\Home.php(18): view('view_logo')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:06:17 --> CodeIgniter\Files\Exceptions\FileNotFoundException: File not found: "../../img/logo.png"
+in SYSTEMPATH\Helpers\html_helper.php on line 147.
+ 1 SYSTEMPATH\Helpers\html_helper.php(147): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('../../img/logo.png')
+ 2 APPPATH\Views\view_logo.php(4): img_data('../../img/logo.png')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_logo.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_logo', [], true)
+ 6 APPPATH\Controllers\Home.php(18): view('view_logo')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:30:41 --> ErrorException: Undefined variable $title
+in APPPATH\Views\view_head.php on line 3.
+ 1 APPPATH\Views\view_head.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_head', [], true)
+ 5 APPPATH\Controllers\CtrlConnexion.php(10): view('view_head')
+ 6 APPPATH\Controllers\Home.php(18): App\Controllers\Ctrlconnexion->pageConnexion()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:32:33 --> ErrorException: Undefined variable $title
+in APPPATH\Views\view_head.php on line 3.
+ 1 APPPATH\Views\view_head.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_head', [], true)
+ 5 APPPATH\Controllers\CtrlConnexion.php(10): view('view_head')
+ 6 APPPATH\Controllers\Home.php(18): App\Controllers\Ctrlconnexion->pageConnexion()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:32:34 --> ErrorException: Undefined variable $title
+in APPPATH\Views\view_head.php on line 3.
+ 1 APPPATH\Views\view_head.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_head', [], true)
+ 5 APPPATH\Controllers\CtrlConnexion.php(10): view('view_head')
+ 6 APPPATH\Controllers\Home.php(18): App\Controllers\Ctrlconnexion->pageConnexion()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:32:34 --> ErrorException: Undefined variable $title
+in APPPATH\Views\view_head.php on line 3.
+ 1 APPPATH\Views\view_head.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_head', [], true)
+ 5 APPPATH\Controllers\CtrlConnexion.php(10): view('view_head')
+ 6 APPPATH\Controllers\Home.php(18): App\Controllers\Ctrlconnexion->pageConnexion()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:32:34 --> ErrorException: Undefined variable $title
+in APPPATH\Views\view_head.php on line 3.
+ 1 APPPATH\Views\view_head.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_head', [], true)
+ 5 APPPATH\Controllers\CtrlConnexion.php(10): view('view_head')
+ 6 APPPATH\Controllers\Home.php(18): App\Controllers\Ctrlconnexion->pageConnexion()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 16:32:34 --> ErrorException: Undefined variable $title
+in APPPATH\Views\view_head.php on line 3.
+ 1 APPPATH\Views\view_head.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\view_head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_head', [], true)
+ 5 APPPATH\Controllers\CtrlConnexion.php(10): view('view_head')
+ 6 APPPATH\Controllers\Home.php(18): App\Controllers\Ctrlconnexion->pageConnexion()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 18:30:53 --> ParseError: syntax error, unexpected token "return"
+in APPPATH\Controllers\CtrlConnexion.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\Ctrlconnexion.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ctrlconnexion')
+ 3 APPPATH\Controllers\Home.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ctrlconnexion')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 18:31:27 --> ParseError: syntax error, unexpected token "return"
+in APPPATH\Controllers\CtrlConnexion.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\Ctrlconnexion.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ctrlconnexion')
+ 3 APPPATH\Controllers\Home.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ctrlconnexion')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 21:40:51 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:40:53 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:40:54 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:40:54 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:41:19 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:42:03 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:42:04 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:42:04 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:42:05 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:42:05 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:42:05 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:42:06 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:42:06 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:43:26 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:43:27 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:43:27 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 21:47:39 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Mesfonctions.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-13 23:05:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "view_head_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_head_.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_head_', [], true)
+ 3 APPPATH\Controllers\CtrlSession.php(10): view('view_head_', [...])
+ 4 APPPATH\Controllers\Home.php(18): App\Controllers\CtrlSession->pageConnexion()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 23:19:05 --> Error: Class "config\Database" not found
+in APPPATH\Models\Monmodele.php on line 8.
+ 1 APPPATH\Models\Monmodele.php(13): App\Models\Monmodele->bdd()
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 23:20:03 --> Error: Class "config\Database" not found
+in APPPATH\Models\Monmodele.php on line 8.
+ 1 APPPATH\Models\Monmodele.php(13): App\Models\Monmodele->bdd()
+ 2 APPPATH\Controllers\CtrlSession.php(30): App\Models\Monmodele->getVerifConnexion([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
