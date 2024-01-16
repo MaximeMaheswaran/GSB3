@@ -10,50 +10,70 @@ class CtrlSession extends BaseController
      */
     public function pageConnexion($head)
     {
-        $data['title'] = "GSB | connexion"; // titre de l'onglet
-        return view($head, $data) .
-            view('view_logo').
-            view('view_connexion');
+        $data['title'] = "GSB | connexion";
+        return view($head, $data);
     }
 
-    /**
-     * verification de la connexion
-     */
-    public function verifConnexion()
-    {   
-        helper('url');// activation de l'helper codeiniter
-        $mesFonctions = new \App\Models\Mesfonctions(); // instancier la class Mes fonctions
+    public function pageAccueil($head)
+    {
+        $data['title'] = "GSB | Accueil";
+        return view($head, $data);
+    }
 
-        if (!$mesFonctions->estConnecte()) {// verification si deja connnecter
-            if ($this->request->is('post')) { // verification si on recoit un methode post 
-                // les relgle pour valider l'entrer dans le formulaire 
+    public function deconnexion()
+    {
+        // Détruire la session
+        session()->destroy();
+
+        // Rediriger vers la page d'accueil ou une autre page
+        return redirect()->to(base_url());
+    }
+
+    public function verifConnexion()
+    {
+        helper('url');
+        // Si l'utilisateur est déjà connecté
+        if (isset($_SESSION)) {
+            echo "déjà connecté";
+        } else {
+            if ($this->request->is('post')) {
+                // Règles à respecter 
                 $rules = [
                     'login' => 'required',
-                    'pwd' => 'required|min_length[1]|max_length[12]'
+                    'mdp'   => 'required|min_length[1]|max_length[255]'
                 ];
-                if (!$this->validate($rules)) { //verifier les entrer avec les regles
-                    return $this->pageConnexion('view_head');
-                } else {
-                    $model = new \App\Models\Monmodele; // instancier la class mon modele
-                    if ($model->getVerifConnexion($_POST)) { // authentifier si le visiteur existe dan la base de donnée 
-                        // ajout des donnée dans session
+                // Si les règles ne sont pas respectés   
+                if (!$this->validate($rules)) {
+                    // Stocker les erreurs de validation
+                    return redirect()->to(base_url())->withInput()->with('validation', $this->validator);
+                } 
+                // Les règles ont bien étés respectés
+                else {
+                    // On vérifie si le login et le mot de passe correspondent bien à une personne dans la base de données
+                    $modele = new \App\Models\MonModele(); // Initialisation de la classe Modele
+                    // Si le login et le mot de passe correspondent bien à une personne
+                    if ($modele->getverifConnexion($_POST)) {
+                        $unePersonne = $modele->getUnVisiteur($_POST);
                         $newdata = [
-                            'username'  => $_POST['login'],
+                            'id'  => $unePersonne['id'],
+                            'nom' => $unePersonne['nom'],
+                            'prenom' => $unePersonne['prenom'],
+                            'login' => $unePersonne['login'],
+                            'adresse' => $unePersonne['adresse'],
+                            'cp' => $unePersonne['cp'],
+                            'ville' => $unePersonne['ville'],
                             'is_logged' => true,
                         ];
                         session()->set($newdata);
-                        $_SESSION['uc'] = "catalogue";
                         return redirect()->to('/');
-                    } else {
-                        return $this->pageConnexion('view_head');
+                    }
+                    // Le login et/ou le mot de passe est incorrect
+                    else {
+                        return $this->pageConnexion('vue_connexion') . view('vue_logo') . view('errors/vue_connexion') . view('vue_formulaire');
                     }
                 }
-            } else {
-                return $this->pageConnexion('view_head');
             }
-        } else {
-            $_SESSION['uc'] = "catalogue";
-            return redirect()->to('/');
         }
     }
+    
 }

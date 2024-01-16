@@ -1,0 +1,66 @@
+CRITICAL - 2024-01-15 13:11:03 --> Error: Class "CtrlSession" not found
+in APPPATH\Views\view_connexion.php on line 8.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_connexion', [], true)
+ 4 APPPATH\Controllers\CtrlSession.php(16): view('view_connexion')
+ 5 APPPATH\Controllers\Home.php(20): App\Controllers\CtrlSession->pageConnexion('view_head_.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 13:11:03 --> Error: Class "CtrlSession" not found
+in APPPATH\Views\view_connexion.php on line 8.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_connexion', [], true)
+ 4 APPPATH\Controllers\CtrlSession.php(16): view('view_connexion')
+ 5 APPPATH\Controllers\Home.php(20): App\Controllers\CtrlSession->pageConnexion('view_head_.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 13:11:04 --> Error: Class "CtrlSession" not found
+in APPPATH\Views\view_connexion.php on line 8.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_connexion', [], true)
+ 4 APPPATH\Controllers\CtrlSession.php(16): view('view_connexion')
+ 5 APPPATH\Controllers\Home.php(20): App\Controllers\CtrlSession->pageConnexion('view_head_.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 13:11:05 --> Error: Class "CtrlSession" not found
+in APPPATH\Views\view_connexion.php on line 8.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_connexion', [], true)
+ 4 APPPATH\Controllers\CtrlSession.php(16): view('view_connexion')
+ 5 APPPATH\Controllers\Home.php(20): App\Controllers\CtrlSession->pageConnexion('view_head_.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 13:11:08 --> Error: Class "CtrlSession" not found
+in APPPATH\Views\view_connexion.php on line 8.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_connexion', [], true)
+ 4 APPPATH\Controllers\CtrlSession.php(16): view('view_connexion')
+ 5 APPPATH\Controllers\Home.php(20): App\Controllers\CtrlSession->pageConnexion('view_head_.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 13:12:22 --> Error: Undefined constant "CtrlSession"
+in APPPATH\Views\view_connexion.php on line 8.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('view_connexion', [], true)
+ 4 APPPATH\Controllers\CtrlSession.php(16): view('view_connexion')
+ 5 APPPATH\Controllers\Home.php(20): App\Controllers\CtrlSession->pageConnexion('view_head_.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
