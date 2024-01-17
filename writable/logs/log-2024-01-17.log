@@ -1,0 +1,1346 @@
+CRITICAL - 2024-01-17 07:48:55 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\CtrlInscription.php on line 37.
+ 1 APPPATH\Controllers\CtrlInscription.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Controllers\\CtrlInscription.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 07:49:06 --> ErrorException: Undefined variable $modele
+in APPPATH\Views\vue_unePresentation.php on line 3.
+ 1 APPPATH\Views\vue_unePresentation.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modele', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(37): view('vue_unePresentation')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 07:49:26 --> ErrorException: Undefined variable $modele
+in APPPATH\Views\vue_unePresentation.php on line 3.
+ 1 APPPATH\Views\vue_unePresentation.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modele', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(38): view('vue_unePresentation')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 07:49:27 --> ErrorException: Undefined variable $modele
+in APPPATH\Views\vue_unePresentation.php on line 3.
+ 1 APPPATH\Views\vue_unePresentation.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modele', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(38): view('vue_unePresentation')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 07:49:39 --> ErrorException: Undefined variable $presentation
+in APPPATH\Views\vue_unePresentation.php on line 3.
+ 1 APPPATH\Views\vue_unePresentation.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $presentation', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(38): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 07:49:40 --> ErrorException: Undefined variable $presentation
+in APPPATH\Views\vue_unePresentation.php on line 3.
+ 1 APPPATH\Views\vue_unePresentation.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $presentation', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(38): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 07:53:33 --> mysqli_sql_exception: Duplicata du champ 'c3-8' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(84): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(27): App\Models\ModelePresentation->ajouterUnePresentationPourLaPersonne('8')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('8')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 07:53:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-8' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`) VALUES (:id_visiteur:, :id_presentation:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(27): App\Models\ModelePresentation->ajouterUnePresentationPourLaPersonne('8')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('8')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 07:53:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-8' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`) VALUES (\'c3\', \'8\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`) VALUES (\'c3\', \'8\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`) VALUES (:id_visiteur:, :id_presentation:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(27): App\Models\ModelePresentation->ajouterUnePresentationPourLaPersonne('8')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 07:53:33 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-8' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`) VALUES (\'c3\', \'8\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`) VALUES (\'c3\', \'8\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`) VALUES (\'c3\', \'8\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`) VALUES (:id_visiteur:, :id_presentation:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(84): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(27): App\Models\ModelePresentation->ajouterUnePresentationPourLaPersonne('8')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('8')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:29:58 --> BadMethodCallException: Call to undefined method App\Models\ModelePresentation::AjouterUnePresentationPourLaPersonne
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\CtrlInscription.php(27): CodeIgniter\Model->__call('AjouterUnePresentationPourLaPersonne', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:42:12 --> ErrorException: Undefined variable $salle_id
+in APPPATH\Views\vue_unePresentation.php on line 16.
+ 1 APPPATH\Views\vue_unePresentation.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $salle_id', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:44:28 --> BadMethodCallException: Call to undefined method App\Models\ModelePresentation::getAllSiegeDeUneSalle
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Views\vue_unePresentation.php(5): CodeIgniter\Model->__call('getAllSiegeDeUneSalle', [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:45:54 --> ParseError: syntax error, unexpected identifier "helper", expecting "," or ";"
+in APPPATH\Views\vue_unePresentation.php on line 6.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 3 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:46:01 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_unePresentation.php on line 5.
+ 1 APPPATH\Views\vue_unePresentation.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:46:15 --> ErrorException: Undefined array key 0
+in APPPATH\Views\vue_unePresentation.php on line 5.
+ 1 APPPATH\Views\vue_unePresentation.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:46:16 --> ErrorException: Undefined array key 0
+in APPPATH\Views\vue_unePresentation.php on line 5.
+ 1 APPPATH\Views\vue_unePresentation.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:46:22 --> ErrorException: Undefined array key 1
+in APPPATH\Views\vue_unePresentation.php on line 5.
+ 1 APPPATH\Views\vue_unePresentation.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:47:30 --> ErrorException: Undefined array key 1
+in APPPATH\Views\vue_unePresentation.php on line 5.
+ 1 APPPATH\Views\vue_unePresentation.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:47:31 --> ErrorException: Undefined array key 1
+in APPPATH\Views\vue_unePresentation.php on line 5.
+ 1 APPPATH\Views\vue_unePresentation.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('8')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:53:00 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\vue_unePresentation.php on line 17.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 3 APPPATH\Controllers\CtrlInscription.php(41): view('vue_unePresentation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:58:05 --> ErrorException: Undefined variable $siegesIds
+in APPPATH\Views\vue_unePresentation.php on line 4.
+ 1 APPPATH\Views\vue_unePresentation.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siegesIds', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(41): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('7')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 08:59:39 --> Error: Call to undefined function img()
+in APPPATH\Views\vue_unePresentation.php on line 14.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 4 APPPATH\Controllers\CtrlInscription.php(41): view('vue_unePresentation', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('7')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:11:45 --> BadMethodCallException: Call to undefined method App\Models\ModelePresentation::aReserverCeSiege
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Views\vue_unePresentation.php(15): CodeIgniter\Model->__call('aReserverCeSiege', [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:11:58 --> ArgumentCountError: Too few arguments to function App\Models\ModelePresentation::aReserverCeSiege(), 2 passed in C:\Users\kikob\OneDrive\Desktop\GSB3\app\Views\vue_unePresentation.php on line 15 and exactly 3 expected
+in APPPATH\Models\ModelePresentation.php on line 54.
+ 1 APPPATH\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 09:12:22 --> mysqli_sql_exception: Champ 'id_siege' inconnu dans field list in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_visi...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_visi...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_visi...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id_visi...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\View\View.php(228): include('C:\\Users\\kikob\\...')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Common.php(1178): CodeIgniter\View\View->render('vue_unePresenta...', Array, true)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(31): view('vue_unePresenta...', Array)
+#10 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+#11 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#12 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-01-17 09:12:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_siege' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id_siege` = :id_siege:', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 7 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:12:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_siege' inconnu dans field list
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id_siege` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id_siege` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id_siege` = :id_siege:', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 9 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:12:22 --> [Caused by] mysqli_sql_exception: Champ 'id_siege' inconnu dans field list
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id_siege` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id_siege` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id_siege` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id_siege` = :id_siege:', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+10 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+11 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 09:12:38 --> mysqli_sql_exception: Champ 'id_siege' inconnu dans field list in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_visi...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_visi...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_visi...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id_visi...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\View\View.php(228): include('C:\\Users\\kikob\\...')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Common.php(1178): CodeIgniter\View\View->render('vue_unePresenta...', Array, true)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(31): view('vue_unePresenta...', Array)
+#10 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+#11 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#12 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-01-17 09:12:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_siege' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 7 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:12:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_siege' inconnu dans field list
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id` = :id:', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 9 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:12:38 --> [Caused by] mysqli_sql_exception: Champ 'id_siege' inconnu dans field list
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'1\'
+AND `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id_visiteur`, `id_presentation`, `id_siege`
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id` = :id:', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+10 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+11 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:21:28 --> BadMethodCallException: Call to undefined method App\Models\ModelePresentation::aReserverCeSiege
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Views\vue_unePresentation.php(15): CodeIgniter\Model->__call('aReserverCeSiege', [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:25:52 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::getLastQuery()
+in APPPATH\Models\ModelePresentation.php on line 65.
+ 1 APPPATH\Views\vue_unePresentation.php(15): App\Models\ModelePresentation->aReserverCeSiege('c3', '1', '1')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(31): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:34:57 --> ErrorException: Undefined variable $estReserverParLaPersonne
+in APPPATH\Views\vue_unePresentation.php on line 15.
+ 1 APPPATH\Views\vue_unePresentation.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estReserverParLaPersonne', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('7')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:34:58 --> ErrorException: Undefined variable $estReserverParLaPersonne
+in APPPATH\Views\vue_unePresentation.php on line 15.
+ 1 APPPATH\Views\vue_unePresentation.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estReserverParLaPersonne', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('7')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:49:11 --> ArgumentCountError: Too few arguments to function App\Models\ModelePresentation::inscriptionPresentationPourUnePersonne(), 1 passed in C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php on line 27 and exactly 4 expected
+in APPPATH\Models\ModelePresentation.php on line 66.
+ 1 APPPATH\Controllers\CtrlInscription.php(27): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '15')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:52:42 --> ErrorException: Undefined variable $siegeId
+in APPPATH\Controllers\CtrlInscription.php on line 29.
+ 1 APPPATH\Controllers\CtrlInscription.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siegeId', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Controllers\\CtrlInscription.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '15')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:52:42 --> ErrorException: Undefined variable $siegeId
+in APPPATH\Controllers\CtrlInscription.php on line 29.
+ 1 APPPATH\Controllers\CtrlInscription.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siegeId', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Controllers\\CtrlInscription.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '15')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 09:57:06 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(73): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '14')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '14')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 09:57:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '14')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '14')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:57:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'14\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'14\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '14')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:57:06 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'14\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'14\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'14\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '14')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '14')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 09:57:28 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(73): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '13')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 09:57:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:57:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:57:28 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 09:59:06 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '18')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 09:59:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:59:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:59:06 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 09:59:31 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '15')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '15')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 09:59:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '15')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '15')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:59:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'15\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'15\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '15')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:59:31 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '15')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 09:59:41 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '18')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 09:59:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:59:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 09:59:41 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 10:02:38 --> mysqli_sql_exception: Champ 'id_salle' inconnu dans where clause in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Views\vue_unePresentation.php(9): App\Models\ModelePresentation->aReservationDansUneSalle('c3', '1')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\View\View.php(228): include('C:\\Users\\kikob\\...')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Common.php(1178): CodeIgniter\View\View->render('vue_unePresenta...', Array, true)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(21): view('vue_unePresenta...', Array)
+#10 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('7')
+#11 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#12 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-01-17 10:02:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_salle' inconnu dans where clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_salle` = :id_salle:', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Views\vue_unePresentation.php(9): App\Models\ModelePresentation->aReservationDansUneSalle('c3', '1')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 7 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('7')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:02:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_salle' inconnu dans where clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_salle` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_salle` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_salle` = :id_salle:', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Views\vue_unePresentation.php(9): App\Models\ModelePresentation->aReservationDansUneSalle('c3', '1')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+ 9 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('7')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:02:38 --> [Caused by] mysqli_sql_exception: Champ 'id_salle' inconnu dans where clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_salle` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_salle` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_salle` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_salle` = :id_salle:', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Views\vue_unePresentation.php(9): App\Models\ModelePresentation->aReservationDansUneSalle('c3', '1')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_unePresentation.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_unePresentation', [], true)
+10 APPPATH\Controllers\CtrlInscription.php(21): view('vue_unePresentation', [...])
+11 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->detailDeUnePresentation('7')
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 10:10:44 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2782): CodeIgniter\Database\BaseConnection->query('DELETE FROM `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(78): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(39): App\Models\ModelePresentation->desinscriptionPresentationPourUnePersonne('7', Array, 'c3', '18')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('7', '18')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 10:10:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2782): CodeIgniter\Database\BaseConnection->query('DELETE FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id_siege` = :id_siege:', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(78): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\CtrlInscription.php(39): App\Models\ModelePresentation->desinscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('7', '18')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:10:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'7\'
+AND `id_siege` = (\'1\',\'2\',\'3\',\'4\',\'5\',\'6\',\'7\',\'8\',\'9\',\'10\',\'11\',\'12\',\'13\',\'14\',\'15\',\'16\',\'17\',\'18\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'7\'
+AND `id_siege` = (\'1\',\'2\',\'3\',\'4\',\'5\',\'6\',\'7\',\'8\',\'9\',\'10\',\'11\',\'12\',\'13\',\'14\',\'15\',\'16\',\'17\',\'18\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2782): CodeIgniter\Database\BaseConnection->query('DELETE FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id_siege` = :id_siege:', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(78): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\CtrlInscription.php(39): App\Models\ModelePresentation->desinscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('7', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:10:44 --> [Caused by] mysqli_sql_exception: Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'7\'
+AND `id_siege` = (\'1\',\'2\',\'3\',\'4\',\'5\',\'6\',\'7\',\'8\',\'9\',\'10\',\'11\',\'12\',\'13\',\'14\',\'15\',\'16\',\'17\',\'18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'7\'
+AND `id_siege` = (\'1\',\'2\',\'3\',\'4\',\'5\',\'6\',\'7\',\'8\',\'9\',\'10\',\'11\',\'12\',\'13\',\'14\',\'15\',\'16\',\'17\',\'18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `reserver`
+WHERE `id_visiteur` = \'c3\'
+AND `id_presentation` = \'7\'
+AND `id_siege` = (\'1\',\'2\',\'3\',\'4\',\'5\',\'6\',\'7\',\'8\',\'9\',\'10\',\'11\',\'12\',\'13\',\'14\',\'15\',\'16\',\'17\',\'18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2782): CodeIgniter\Database\BaseConnection->query('DELETE FROM `reserver`
+WHERE `id_visiteur` = :id_visiteur:
+AND `id_presentation` = :id_presentation:
+AND `id_siege` = :id_siege:', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(78): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\CtrlInscription.php(39): App\Models\ModelePresentation->desinscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->desinscription('7', '18')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 10:15:23 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '18')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 10:15:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:15:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:15:23 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '18')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 10:38:15 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '13')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 10:38:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:38:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:38:15 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 10:38:17 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\kikob\OneDrive\Desktop\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\kikob\OneDrive\Desktop\GSB3\app\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '13')
+#6 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+#7 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+#8 C:\Users\kikob\OneDrive\Desktop\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\kikob\OneDrive\Desktop\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-17 10:38:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:38:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 10:38:17 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlInscription.php(29): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->inscription('7', '13')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 11:53:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vue_informationsPersonelles.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vue_informationsPersonelles.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informationsPersonelles', [], true)
+ 3 APPPATH\Controllers\CtrlInformation.php(9): view('vue_informationsPersonelles')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:01:23 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:10 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:10 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:10 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:10 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:33 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:02:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:05:40 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:05:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:05:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:05:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:08:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:09:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:09:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:09:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:09:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(10): CodeIgniter\Model->__call('getLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 12:10:15 --> ErrorException: Undefined variable $informations
+in APPPATH\Views\vue_informationsPersonnelles.php on line 7.
+ 1 APPPATH\Views\vue_informationsPersonnelles.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $informations', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_informationsPersonnelles.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_informationsPersonnelles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informationsPersonnelles', [], true)
+ 5 APPPATH\Controllers\CtrlInformation.php(12): view('vue_informationsPersonnelles')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 13:01:05 --> ErrorException: Undefined variable $modificationEnCours
+in APPPATH\Views\vue_informationsPersonnelles.php on line 7.
+ 1 APPPATH\Views\vue_informationsPersonnelles.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modificationEnCours', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_informationsPersonnelles.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Views\\vue_informationsPersonnelles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informationsPersonnelles', [], true)
+ 5 APPPATH\Controllers\CtrlInformation.php(12): view('vue_informationsPersonnelles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 13:07:13 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\vue_informationsPersonnelles.php on line 83.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informationsPersonnelles', [], true)
+ 3 APPPATH\Controllers\CtrlInformation.php(13): view('vue_informationsPersonnelles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 13:14:07 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CtrlInformation.php(26): CodeIgniter\Model->__call('setLesInformations', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->mettreAJourInformations()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-17 13:17:56 --> ErrorException: Undefined array key "login"
+in APPPATH\Models\ModeleInformations.php on line 34.
+ 1 APPPATH\Models\ModeleInformations.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'C:\\Users\\kikob\\OneDrive\\Desktop\\GSB3\\app\\Models\\ModeleInformations.php', 34)
+ 2 APPPATH\Controllers\CtrlInformation.php(26): App\Models\ModeleInformations->setLesInformations([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->mettreAJourInformations()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

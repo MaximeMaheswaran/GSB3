@@ -51,51 +51,107 @@ class ModelePresentation extends Model
         return ($result) ? $result->capaciteMax : null;
     }
 
-    public function aReserverCettePresentation($idPersonne, $presentation_id) {
+    public function aReserverCeSiege($idPersonne, $presentation_id, $siege_id) {
         $db = $this->db;
     
-        $query = $db->table('reserver')
-            ->select('id_visiteur, id_presentation')
+        $result = $db->table('reserver')
             ->where('id_visiteur', $idPersonne)
             ->where('id_presentation', $presentation_id)
-            ->get();
+            ->where('id_siege', $siege_id)
+            ->countAllResults() > 0;
     
-        // Récupérer le résultat
-        $result = $query->getRow();
-    
-        // Vérifier si le résultat existe, indiquant que la personne a réservé cette présentation
-        return !empty($result);
+        return $result;
     }
     
-    
-
-    public function ajouterUnePresentationPourLaPersonne($presentation_id) {
+    public function inscriptionPresentationPourUnePersonne($presentation_id, $salle_id, $idPersonne, $siegeId) {
         $db = $this->db;
-    
-        // Récupérer l'ID de la personne en session
-        $idPersonne = session()->get('id');
-    
-        // Construire et exécuter la requête d'insertion
+        
+        // Insérer une nouvelle réservation
         $data = [
             'id_visiteur' => $idPersonne,
             'id_presentation' => $presentation_id,
+            'id_siege' => $siegeId
         ];
-    
         $db->table('reserver')->insert($data);
     
-        // Vérifier si l'insertion a réussi
-        $inserted = $db->affectedRows() > 0;
+        // Mettre à jour la table siege pour indiquer que le siège est occupé par le visiteur
+        $db->table('siege')
+            ->where('id', $siegeId)  // Utiliser l'ID du siège pour la condition where
+            ->update(['visiteur_id' => $idPersonne]);
     
-        // Si l'insertion a réussi, mettre à jour nbPersonneInscrite dans la table presentation
-        if ($inserted) {
-            $db->table('presentation')
-                ->where('id', $presentation_id)
-                ->set('nbPersonneInscrite', 'nbPersonneInscrite + 1', false)
-                ->update();
-        }
-    
-        return $inserted;
+        // Mettre à jour la colonne nbPersonneInscrite dans la table presentation
+        $db->table('presentation')
+            ->where('id', $presentation_id)
+            ->set('nbPersonneInscrite', 'nbPersonneInscrite + 1', false)
+            ->update();
     }
     
+    public function desinscriptionPresentationPourUnePersonne($presentation_id, $salle_id, $idPersonne, $siegeId) {
+        $db = $this->db;
+        
+        // Supprimer la réservation
+        $db->table('reserver')
+            ->where('id_presentation', $presentation_id)
+            ->where('id_visiteur', $idPersonne)
+            ->where('id_siege', $siegeId)
+            ->delete();
+    
+        // Mettre à jour la table siege pour indiquer que le siège est maintenant disponible
+        $db->table('siege')
+            ->where('id', $siegeId)
+            ->update(['visiteur_id' => null]);
+    
+        // Mettre à jour la colonne nbPersonneInscrite dans la table presentation
+        $db->table('presentation')
+            ->where('id', $presentation_id)
+            ->set('nbPersonneInscrite', 'nbPersonneInscrite - 1', false)
+            ->update();
+    }
+    
+    public function aReservationDansUneSalle($idVisiteur, $idSalle)
+    {
+        $db = $this->db;
+    
+        $query = $db->table('reserver')
+            ->join('presentation', 'presentation.id = reserver.id_presentation')
+            ->where('reserver.id_visiteur', $idVisiteur)
+            ->where('presentation.salle_id', $idSalle)
+            ->get();
+    
+        // Vérifier si une réservation existe
+        return $query->getNumRows() > 0;
+    }
+    
+
+
+    public function getTousLesSiegesDeUneSalle($salle_id) {
+        $db = $this->db;
+    
+        // Récupérer tous les sièges pour une salle donnée
+        $sieges = $db->table('siege')
+                     ->where('salle_id', $salle_id)
+                     ->select('id')
+                     ->get()
+                     ->getResultArray();
+    
+        // Extraire les IDs de la résultat sous forme de tableau simple
+        $siegesIds = array_column($sieges, 'id');
+    
+        return $siegesIds;
+    }
+
+    public function estSiegeReserve($salle_id, $siege_id) {
+        $db = $this->db;
+
+        // Vérifier si le siège est réservé pour une salle donnée
+        $siegeReserve = $db->table('siege')
+                        ->where('salle_id', $salle_id)
+                        ->where('id', $siege_id)
+                        ->where('visiteur_id IS NOT NULL') // Assurez-vous que le champ visiteur_id n'est pas NULL
+                        ->countAllResults();
+
+        return $siegeReserve > 0;
+    }
+
 }
 ?>

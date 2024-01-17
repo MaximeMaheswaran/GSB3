@@ -21,12 +21,24 @@ class CtrlInscription extends BaseController
         return view('vue_navigation') . view('vue_unePresentation' , $data);
     }
 
-    public function inscription($presentation_id)
+    public function inscription($presentation_id , $siegeId)
     {
         $modele = new \App\Models\ModelePresentation();
-        $modele->AjouterUnePresentationPourLaPersonne($presentation_id);
         $data['presentation'] = $modele->getUnePresentation($presentation_id);
+        $data['salle_id'] = $modele->getTousLesSiegesDeUneSalle($data['presentation']['salle_id']);
+        $modele->inscriptionPresentationPourUnePersonne($presentation_id , $data['salle_id'] , session()->get('id'), $siegeId);
         $data['modele'] = $modele;
         return view('vue_navigation') . view('vue_unePresentation' , $data);
+    }
+
+    public function desinscription($presentation_id , $siegeId)
+    {
+        $modele = new \App\Models\ModelePresentation();
+        $data['presentation'] = $modele->getUnePresentation($presentation_id);
+        $data['salle_id'] = $modele->getTousLesSiegesDeUneSalle($data['presentation']['salle_id']);
+        $modele->desinscriptionPresentationPourUnePersonne($presentation_id , $data['salle_id'] , session()->get('id'), $siegeId);
+        $data['modele'] = $modele;
+        return view('vue_navigation'). view('vue_unePresentation' , $data);
+        
     }
 }
