@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="../../../css/style.css">
 <nav>
-    <a href="#">Accueil</a>
+    <a href="<?= site_url('/') ?>">Accueil</a>
     <div class="menu-item">
         <a href="#">Inscription</a>
         <div class="sub-menu">

@@ -19,3 +19,8 @@ $routes->get('information', 'CtrlInformation::index');
 $routes->post('/CtrlInformation/activerModification', 'CtrlInformation::modification');
 $routes->post('/CtrlInformation/mettreAJourInformations', 'CtrlInformation::mettreAJourInformations');
 
+/*-------------- Agent -----------------*/
+$routes->get('/Agent/Home', 'CtrlAgent::accueilAgent');
+$routes->get('/Agent/Moncompte', 'CtrlAgent::monCompteAgent');
+$routes->get('/Agent/Visiteur/A_valider', 'CtrlAgent::aValiderAgent');
+

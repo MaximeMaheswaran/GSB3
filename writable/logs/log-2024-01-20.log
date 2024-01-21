@@ -1,0 +1,62 @@
+ERROR - 2024-01-20 13:03:58 --> Error connecting to the database: mysqli_sql_exception: Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI) in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'gsb3', 3306, '', 0)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(1697): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\Sites\GSB3\app\Models\Monmodele.php(29): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlSession.php(55): App\Models\MonModele->getVerifConnexion(Array)
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+#8 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Accès refusé pour l'utilisateur: '****'@'@localhost' (mot de passe: OUI) in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(1697): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\wamp64\www\Sites\GSB3\app\Models\Monmodele.php(29): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlSession.php(55): App\Models\MonModele->getVerifConnexion(Array)
+#5 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-20 13:03:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Accès refusé pour l'utilisateur: '****'@'@localhost' (mot de passe: OUI)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1697): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `visiteur`
+WHERE `login` LIKE :login: ESCAPE \'!\'
+AND  `mdp` LIKE :mdp: ESCAPE \'!\'', [...], false)
+ 3 APPPATH\Models\Monmodele.php(29): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\CtrlSession.php(55): App\Models\MonModele->getVerifConnexion([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-20 13:16:37 --> ErrorException: Undefined array key "nbPersonneInscrite"
+in APPPATH\Views\vue_presentations.php on line 12.
+ 1 APPPATH\Views\vue_presentations.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nbPersonneInscrite"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_presentations.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_presentations.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_presentations', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(13): view('vue_presentations', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->afficherPresentations()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-20 13:16:52 --> ErrorException: Undefined array key "nbPersonneInscrite"
+in APPPATH\Views\vue_presentations.php on line 12.
+ 1 APPPATH\Views\vue_presentations.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nbPersonneInscrite"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_presentations.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_presentations.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_presentations', [], true)
+ 5 APPPATH\Controllers\CtrlInscription.php(13): view('vue_presentations', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInscription->afficherPresentations()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInscription))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

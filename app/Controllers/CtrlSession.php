@@ -8,16 +8,16 @@ class CtrlSession extends BaseController
      * Affichage de la page connexion
      * @param le head 
      */
-    public function pageConnexion($head)
+    public function pageConnexion()
     {
         $data['title'] = "GSB | connexion";
-        return view($head, $data);
+        return view('vue_entete.php', $data) . view('vue_logo') . view('vue_formulaire');
     }
 
-    public function pageAccueil($head)
+    public function pageAccueil()
     {
         $data['title'] = "GSB | Accueil";
-        return view($head, $data);
+        return view('vue_entete', $data) . view('vue_navigation');
     }
 
     public function deconnexion()
@@ -46,7 +46,7 @@ class CtrlSession extends BaseController
                 if (!$this->validate($rules)) {
                     // Stocker les erreurs de validation
                     return redirect()->to(base_url())->withInput()->with('validation', $this->validator);
-                } 
+                }
                 // Les règles ont bien étés respectés
                 else {
                     // On vérifie si le login et le mot de passe correspondent bien à une personne dans la base de données
@@ -69,11 +69,26 @@ class CtrlSession extends BaseController
                     }
                     // Le login et/ou le mot de passe est incorrect
                     else {
-                        return $this->pageConnexion('vue_connexion') . view('vue_logo') . view('errors/vue_connexion') . view('vue_formulaire');
+                        // Verification si c'est agent qui se connecte
+                        if ($modele->getVerifAgent($_POST)) {
+                            // Recuperation les données de l'agent
+                            $unAgent = $modele->getUnAgent($_POST);
+                            // Ajouter les données dans un tableau associatif
+                            $newdata = [
+                                'id'  => $unAgent['id'],
+                                'nom' => $unAgent['nom'],
+                                'prenom' => $unAgent['prenom'],
+                                'matricule' => $unAgent['matricule'],
+                                'is_logged' => true
+                            ];
+                            session()->set($newdata);
+                            return redirect()->to('/');
+                        } else {
+                            return $this->pageConnexion('vue_connexion') . view('vue_logo') . view('errors/vue_connexion') . view('vue_formulaire');
+                        }
                     }
                 }
             }
         }
     }
-    
 }

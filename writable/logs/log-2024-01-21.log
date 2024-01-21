@@ -1,0 +1,455 @@
+ERROR - 2024-01-21 13:40:35 --> Error connecting to the database: mysqli_sql_exception: Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: NON) in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'gsb3', 3306, '', 0)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(1697): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\Sites\GSB3\app\Models\Monmodele.php(29): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlSession.php(55): App\Models\MonModele->getVerifConnexion(Array)
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+#8 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Accès refusé pour l'utilisateur: '****'@'@localhost' (mot de passe: NON) in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(1697): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\wamp64\www\Sites\GSB3\app\Models\Monmodele.php(29): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlSession.php(55): App\Models\MonModele->getVerifConnexion(Array)
+#5 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-21 13:40:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Accès refusé pour l'utilisateur: '****'@'@localhost' (mot de passe: NON)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1697): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `visiteur`
+WHERE `login` LIKE :login: ESCAPE \'!\'
+AND  `mdp` LIKE :mdp: ESCAPE \'!\'', [...], false)
+ 3 APPPATH\Models\Monmodele.php(29): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\CtrlSession.php(55): App\Models\MonModele->getVerifConnexion([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlSession->verifConnexion()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlSession))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 14:15:57 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Controllers\Home.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-21 14:28:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vue_connexion.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vue_connexion.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_connexion.php', [], true)
+ 3 APPPATH\Controllers\CtrlSession.php(14): view('vue_connexion.php', [...])
+ 4 APPPATH\Controllers\Home.php(21): App\Controllers\CtrlSession->pageConnexion('vue_connexion.php')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 14:29:16 --> ErrorException: Undefined variable $title
+in APPPATH\Views\vue_entete.php on line 4.
+ 1 APPPATH\Views\vue_entete.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_entete.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_entete.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 5 APPPATH\Controllers\CtrlSession.php(20): view('vue_entete')
+ 6 APPPATH\Controllers\Home.php(14): App\Controllers\CtrlSession->pageAccueil('vue_navigation')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 14:59:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vue-entet.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vue-entet.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue-entet', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(12): view('vue-entet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->accueilAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 14:59:55 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\vue_informationsPersonnelles.php on line 32.
+ 1 APPPATH\Views\vue_informationsPersonnelles.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_informationsPersonnelles.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_informationsPersonnelles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informationsPersonnelles', [], true)
+ 5 APPPATH\Controllers\CtrlInformation.php(14): view('vue_informationsPersonnelles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 15:08:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\vue_informationsPersonnelles.php on line 32.
+ 1 APPPATH\Views\vue_informationsPersonnelles.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_informationsPersonnelles.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_informationsPersonnelles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informationsPersonnelles', [], true)
+ 5 APPPATH\Controllers\CtrlInformation.php(14): view('vue_informationsPersonnelles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 15:39:00 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Models\Monmodele.php on line 70.
+ 1 APPPATH\Controllers\CtrlAgent.php(22): App\Models\MonModele->getUnAgent('2')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-21 15:39:14 --> mysqli_sql_exception: Champ: 'id' dans where clause est ambigu in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `personn...', 0)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `personn...')
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `personn...')
+#3 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `personn...', Array, false)
+#4 C:\wamp64\www\Sites\GSB3\app\Models\Monmodele.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlAgent.php(22): App\Models\MonModele->getUnAgentId('2')
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+#8 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-21 15:39:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ: 'id' dans where clause est ambigu
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `personne`.`id`, `matricule`, `nom`, `prenom`
+FROM `personne`
+JOIN `agent` ON `agent`.`id` = `personne`.`id`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\Monmodele.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CtrlAgent.php(22): App\Models\MonModele->getUnAgentId('2')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 15:39:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ: 'id' dans where clause est ambigu
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `personne`.`id`, `matricule`, `nom`, `prenom`
+FROM `personne`
+JOIN `agent` ON `agent`.`id` = `personne`.`id`
+WHERE `id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `personne`.`id`, `matricule`, `nom`, `prenom`
+FROM `personne`
+JOIN `agent` ON `agent`.`id` = `personne`.`id`
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `personne`.`id`, `matricule`, `nom`, `prenom`
+FROM `personne`
+JOIN `agent` ON `agent`.`id` = `personne`.`id`
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Models\Monmodele.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\CtrlAgent.php(22): App\Models\MonModele->getUnAgentId('2')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 15:39:14 --> [Caused by] mysqli_sql_exception: Champ: 'id' dans where clause est ambigu
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `personne`.`id`, `matricule`, `nom`, `prenom`
+FROM `personne`
+JOIN `agent` ON `agent`.`id` = `personne`.`id`
+WHERE `id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `personne`.`id`, `matricule`, `nom`, `prenom`
+FROM `personne`
+JOIN `agent` ON `agent`.`id` = `personne`.`id`
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `personne`.`id`, `matricule`, `nom`, `prenom`
+FROM `personne`
+JOIN `agent` ON `agent`.`id` = `personne`.`id`
+WHERE `id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `personne`.`id`, `matricule`, `nom`, `prenom`
+FROM `personne`
+JOIN `agent` ON `agent`.`id` = `personne`.`id`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Models\Monmodele.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CtrlAgent.php(22): App\Models\MonModele->getUnAgentId('2')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 15:39:37 --> ErrorException: Undefined array key "cp"
+in APPPATH\Views\vue_informations_personnelle.php on line 47.
+ 1 APPPATH\Views\vue_informations_personnelle.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cp"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_informations_personnelle.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_informations_personnelle.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informations_personnelle', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(25): view('vue_informations_personnelle')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 16:02:16 --> ParseError: syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\CtrlAgent.php on line 45.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlAgent.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CtrlAgent')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CtrlAgent')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\CtrlAgent', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-21 16:30:25 --> mysqli_sql_exception: Champ: 'id' dans field list est ambigu in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id`, `v...', 0)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `v...')
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `v...')
+#3 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `v...', Array, false)
+#4 C:\wamp64\www\Sites\GSB3\app\Models\Monmodele.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlAgent.php(42): App\Models\MonModele->getLesVisiteurAReserver()
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+#8 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-21 16:30:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ: 'id' dans field list est ambigu
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `visiteur`.`nom`, `prenom`, `salle`.`nom`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`', [], false)
+ 2 APPPATH\Models\Monmodele.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CtrlAgent.php(42): App\Models\MonModele->getLesVisiteurAReserver()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 16:30:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ: 'id' dans field list est ambigu
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `visiteur`.`nom`, `prenom`, `salle`.`nom`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `visiteur`.`nom`, `prenom`, `salle`.`nom`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `visiteur`.`nom`, `prenom`, `salle`.`nom`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`', [], false)
+ 4 APPPATH\Models\Monmodele.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\CtrlAgent.php(42): App\Models\MonModele->getLesVisiteurAReserver()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 16:30:25 --> [Caused by] mysqli_sql_exception: Champ: 'id' dans field list est ambigu
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id`, `visiteur`.`nom`, `prenom`, `salle`.`nom`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `visiteur`.`nom`, `prenom`, `salle`.`nom`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `visiteur`.`nom`, `prenom`, `salle`.`nom`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `visiteur`.`nom`, `prenom`, `salle`.`nom`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`', [], false)
+ 5 APPPATH\Models\Monmodele.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CtrlAgent.php(42): App\Models\MonModele->getLesVisiteurAReserver()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 16:36:50 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::getRowsArray()
+in APPPATH\Models\Monmodele.php on line 99.
+ 1 APPPATH\Controllers\CtrlAgent.php(42): App\Models\MonModele->getLesVisiteurAReserver()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:32:26 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:32:32 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:32:37 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:32:41 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:32:55 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:33:02 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:33:12 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:34:10 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:34:22 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:34:33 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:34:45 --> ParseError: syntax error, unexpected token ";"
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:34:57 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 3.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:35:00 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 4.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:35:02 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 5.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:35:09 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 5.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:35:18 --> Error: Call to undefined function link_tag()
+in APPPATH\Views\vue_entete.php on line 2.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_entete', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(43): view('vue_entete', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:43:05 --> Error: Object of class CodeIgniter\View\Table could not be converted to string
+in APPPATH\Views\vue_table_a_valider.php on line 11.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(45): view('vue_table_a_valider', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:43:27 --> Error: Object of class CodeIgniter\View\Table could not be converted to string
+in APPPATH\Views\vue_table_a_valider.php on line 11.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 4 APPPATH\Controllers\CtrlAgent.php(45): view('vue_table_a_valider', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

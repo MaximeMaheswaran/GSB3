@@ -7,29 +7,6 @@ SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
 SET NAMES utf8mb4;
 
-DROP TABLE IF EXISTS `animateur`;
-CREATE TABLE `animateur` (
-  `id` int NOT NULL,
-  KEY `id` (`id`),
-  CONSTRAINT `animateur_ibfk_1` FOREIGN KEY (`id`) REFERENCES `personne` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-INSERT INTO `animateur` (`id`) VALUES
-(3),
-(4),
-(5),
-(6),
-(7);
-
-DROP TABLE IF EXISTS `animer`;
-CREATE TABLE `animer` (
-  `animateur_id` int NOT NULL,
-  `presentation_id` int NOT NULL,
-  PRIMARY KEY (`animateur_id`,`presentation_id`),
-  KEY `presentation_id` (`presentation_id`),
-  CONSTRAINT `animer_ibfk_1` FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`),
-  CONSTRAINT `animer_ibfk_2` FOREIGN KEY (`animateur_id`) REFERENCES `animateur` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 DROP TABLE IF EXISTS `conference`;
@@ -42,23 +19,6 @@ CREATE TABLE `conference` (
 INSERT INTO `conference` (`id`, `theme`) VALUES
 (7,	'Covid-19');
 
-DROP TABLE IF EXISTS `intervenant`;
-CREATE TABLE `intervenant` (
-  `id` int NOT NULL,
-  KEY `id` (`id`),
-  CONSTRAINT `intervenant_ibfk_1` FOREIGN KEY (`id`) REFERENCES `personne` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-
-DROP TABLE IF EXISTS `participer`;
-CREATE TABLE `participer` (
-  `intervenant_id` int NOT NULL,
-  `presentation_id` int NOT NULL,
-  PRIMARY KEY (`intervenant_id`,`presentation_id`),
-  KEY `presentation_id` (`presentation_id`),
-  CONSTRAINT `participer_ibfk_1` FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`),
-  CONSTRAINT `participer_ibfk_2` FOREIGN KEY (`intervenant_id`) REFERENCES `intervenant` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 DROP TABLE IF EXISTS `personne`;
@@ -81,6 +41,59 @@ INSERT INTO `personne` (`id`, `nom`, `prenom`, `login`, `mdp`, `secretaire`) VAL
 (6,	'Bernard',	'Thomas',	'tbernard',	'fdc08798d2fba98f7fabeed3c6efe7951eaf145891e3a3ffb3b397492d51452a',	0),
 (7,	'Dupont',	'Camille',	'cdupont',	'83979d9b9bad211352e5dcf8e4368e65f7efca069e30eaa1cd28bf2cef69867a',	0);
 
+
+DROP TABLE IF EXISTS `agent`;
+CREATE TABLE `agent` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `matricule` int NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `agent_ibfk_1` FOREIGN KEY (`id`) REFERENCES `personne`(`id`)
+);
+
+INSERT INTO `agent` VALUES 
+(2, 001);
+
+DROP TABLE IF EXISTS `animateur`;
+CREATE TABLE `animateur` (
+  `id` int NOT NULL,
+  KEY `id` (`id`),
+  CONSTRAINT `animateur_ibfk_1` FOREIGN KEY (`id`) REFERENCES `personne` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `animateur` (`id`) VALUES
+(3),
+(4),
+(5),
+(6),
+(7);
+
+
+DROP TABLE IF EXISTS `intervenant`;
+CREATE TABLE `intervenant` (
+  `id` int NOT NULL,
+  KEY `id` (`id`),
+  CONSTRAINT `intervenant_ibfk_1` FOREIGN KEY (`id`) REFERENCES `personne` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+
+
+
+DROP TABLE IF EXISTS `salle`;
+CREATE TABLE `salle` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `capaciteMax` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `salle` (`id`, `nom`, `capaciteMax`) VALUES
+(1,	'D-203',	18),
+(2,	'D-201',	32);
+
+
+
 DROP TABLE IF EXISTS `presentation`;
 CREATE TABLE `presentation` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -101,63 +114,25 @@ INSERT INTO `presentation` (`id`, `datee`, `nbPersonneInscrite`, `horaire`, `dur
 (7,	'2024-01-16',	8,	'08:00:00',	'01:00:00',	1,	7),
 (8,	'2024-01-17',	16,	'09:00:00',	'01:30:00',	2,	7);
 
-DROP TABLE IF EXISTS `reserver`;
-CREATE TABLE `reserver` (
-  `id_visiteur` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `id_presentation` int NOT NULL,
-  `id_siege` int DEFAULT NULL,
-  PRIMARY KEY (`id_visiteur`,`id_presentation`),
-  KEY `id_presentation` (`id_presentation`),
-  KEY `id_siege` (`id_siege`),
-  CONSTRAINT `reserver_ibfk_1` FOREIGN KEY (`id_presentation`) REFERENCES `presentation` (`id`),
-  CONSTRAINT `reserver_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`),
-  CONSTRAINT `reserver_ibfk_3` FOREIGN KEY (`id_siege`) REFERENCES `siege` (`id`)
+DROP TABLE IF EXISTS `animer`;
+CREATE TABLE `animer` (
+  `animateur_id` int NOT NULL,
+  `presentation_id` int NOT NULL,
+  PRIMARY KEY (`animateur_id`,`presentation_id`),
+  KEY `presentation_id` (`presentation_id`),
+  CONSTRAINT `animer_ibfk_1` FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`),
+  CONSTRAINT `animer_ibfk_2` FOREIGN KEY (`animateur_id`) REFERENCES `animateur` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-DROP TABLE IF EXISTS `salle`;
-CREATE TABLE `salle` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `capaciteMax` int DEFAULT NULL,
-  PRIMARY KEY (`id`)
+DROP TABLE IF EXISTS `participer`;
+CREATE TABLE `participer` (
+  `intervenant_id` int NOT NULL,
+  `presentation_id` int NOT NULL,
+  PRIMARY KEY (`intervenant_id`,`presentation_id`),
+  KEY `presentation_id` (`presentation_id`),
+  CONSTRAINT `participer_ibfk_1` FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`),
+  CONSTRAINT `participer_ibfk_2` FOREIGN KEY (`intervenant_id`) REFERENCES `intervenant` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-INSERT INTO `salle` (`id`, `nom`, `capaciteMax`) VALUES
-(1,	'D-203',	18),
-(2,	'D-201',	32);
-
-DROP TABLE IF EXISTS `siege`;
-CREATE TABLE `siege` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `salle_id` int DEFAULT NULL,
-  `visiteur_id` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `salle_id` (`salle_id`),
-  KEY `fk_siege_visiteur` (`visiteur_id`),
-  CONSTRAINT `fk_siege_salle` FOREIGN KEY (`salle_id`) REFERENCES `salle` (`id`),
-  CONSTRAINT `fk_siege_visiteur` FOREIGN KEY (`visiteur_id`) REFERENCES `visiteur` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-INSERT INTO `siege` (`id`, `salle_id`, `visiteur_id`) VALUES
-(1,	1,	'a17'),
-(2,	1,	'a131'),
-(3,	1,	'a55'),
-(4,	1,	'b13'),
-(5,	1,	'e22'),
-(6,	1,	'b16'),
-(7,	1,	'b19'),
-(8,	1,	'b25'),
-(9,	1,	'b28'),
-(10,	1,	'b50'),
-(11,	1,	'b4'),
-(12,	1,	'c14'),
-(13,	1,	NULL),
-(14,	1,	NULL),
-(15,	1,	NULL),
-(16,	1,	NULL),
-(17,	1,	NULL),
-(18,	1,	NULL);
 
 DROP TABLE IF EXISTS `visiteur`;
 CREATE TABLE `visiteur` (
@@ -200,6 +175,52 @@ INSERT INTO `visiteur` (`id`, `nom`, `prenom`, `login`, `mdp`, `adresse`, `cp`, 
 ('f21',	'Finck',	'Jacques',	'jfinck',	'577d67f320202216ee7f2fe26b363daada983b0d06521a7c89aeb049eafc97f5',	'10 avenue du Prado',	'13002',	'Marseille'),
 ('f39',	'Frémont',	'Fernande',	'ffremont',	'b409a4db2e8a88fb10f427ef3ff3452dd3489b75648a7593f6ad74d4572ae06b',	'4 route de la mer',	'13012',	'Allauh'),
 ('f4',	'Gest',	'Alain',	'agest',	'a8a5b00ccbc425791ae7e9bdca16fc7e108c9d58e6d70b0c66f327b82b083ec9',	'30 avenue de la mer',	'13025',	'Berre');
+
+
+DROP TABLE IF EXISTS `siege`;
+CREATE TABLE `siege` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `salle_id` int DEFAULT NULL,
+  `visiteur_id` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `salle_id` (`salle_id`),
+  KEY `fk_siege_visiteur` (`visiteur_id`),
+  CONSTRAINT `fk_siege_salle` FOREIGN KEY (`salle_id`) REFERENCES `salle` (`id`),
+  CONSTRAINT `fk_siege_visiteur` FOREIGN KEY (`visiteur_id`) REFERENCES `visiteur` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `siege` (`id`, `salle_id`, `visiteur_id`) VALUES
+(1,	1,	'a17'),
+(2,	1,	'a131'),
+(3,	1,	'a55'),
+(4,	1,	'b13'),
+(5,	1,	'e22'),
+(6,	1,	'b16'),
+(7,	1,	'b19'),
+(8,	1,	'b25'),
+(9,	1,	'b28'),
+(10,	1,	'b50'),
+(11,	1,	'b4'),
+(12,	1,	'c14'),
+(13,	1,	NULL),
+(14,	1,	NULL),
+(15,	1,	NULL),
+(16,	1,	NULL),
+(17,	1,	NULL),
+(18,	1,	NULL);
+
+DROP TABLE IF EXISTS `reserver`;
+CREATE TABLE `reserver` (
+  `id_visiteur` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `id_presentation` int NOT NULL,
+  `id_siege` int DEFAULT NULL,
+  PRIMARY KEY (`id_visiteur`,`id_presentation`),
+  KEY `id_presentation` (`id_presentation`),
+  KEY `id_siege` (`id_siege`),
+  CONSTRAINT `reserver_ibfk_1` FOREIGN KEY (`id_presentation`) REFERENCES `presentation` (`id`),
+  CONSTRAINT `reserver_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`),
+  CONSTRAINT `reserver_ibfk_3` FOREIGN KEY (`id_siege`) REFERENCES `siege` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 /*
 
