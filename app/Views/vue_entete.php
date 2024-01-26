@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo.png">
+    <link rel="shortcut icon" href="../../img/logo.png">
+    <link rel="shortcut icon" href="../../../img/logo.png">
+    <link rel="shortcut icon" href="../../../../img/logo.png">
     <title><?=$title?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -1,10 +1,11 @@
+
 <nav>
     <a href="<?= site_url('/') ?>">Accueil</a>
     <div class="menu-item">
         <a href="#">Inscription</a>
         <div class="sub-menu">
             <a href="<?= site_url('CtrlInscription/getLesPresentations') ?>">S'inscrire</a>
-            <a href="#">Rechercher une inscription</a>
+            <a href="#">Rechercher une conférence</a>
             <a href="#">Mes inscriptions</a>
         </div>
     </div>

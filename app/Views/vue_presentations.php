@@ -1,6 +1,5 @@
 <?php
 $presentationsChunked = array_chunk($presentations, 3);
-
 foreach ($presentationsChunked as $group): ?>
     <div class="presentation-group">
         <?php foreach ($group as $presentation): ?>

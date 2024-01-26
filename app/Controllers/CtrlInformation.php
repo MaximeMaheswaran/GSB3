@@ -10,7 +10,7 @@ class CtrlInformation extends BaseController
         $data['informations'] = $modele->getLesInformations(session()->get('id'));
         $data['modificationEnCours'] = false;
         $data['modele'] = $modele;
-        $data['title'] = "GSB | Mon compte"; // Le titre de l'onglet
+        $data['title'] = "GSB | Mon compte";
         return view('vue_entete', $data) . view('vue_navigation') . view('vue_informationsPersonnelles', $data);
     }
 
@@ -20,7 +20,8 @@ class CtrlInformation extends BaseController
         $data['informations'] = $modele->getLesInformations(session()->get('id'));
         $data['modificationEnCours'] = true;
         $data['modele'] = $modele;
-        return view('vue_navigation') . view('vue_informationsPersonnelles', $data);
+        $data['title'] = "GSB | Mon compte";
+        return view('vue_entete', $data) . view('vue_navigation') . view('vue_informationsPersonnelles', $data);
     }
 
     public function mettreAJourInformations()
@@ -30,6 +31,7 @@ class CtrlInformation extends BaseController
         $data['informations'] = $modele->getLesInformations(session()->get('id'));
         $data['modificationEnCours'] = false;
         $data['modele'] = $modele;
-        return view('vue_navigation') . view('vue_informationsPersonnelles', $data);
+        $data['title'] = "GSB | Mon compte";
+        return view('vue_entete', $data) . view('vue_navigation') . view('vue_informationsPersonnelles', $data);
     }
 }
