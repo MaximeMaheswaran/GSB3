@@ -1,25 +1,38 @@
 <?= helper('form'); ?>
-<table border="1px solid black" align="center">
-    <tr>
-        <th>Nom</th>
-        <th>Prenom</th>
-        <th>Salle</th>
-        <th>Horaire</th>
-        <th>A valider</th>
-    </tr>
-    <?php var_dump($visiteursAValider);
-    foreach ($visiteursAValider as $unVisiteur) { ?>
-        <tr valign="middle">
-            <td><?= $unVisiteur['nom'] ?></td>
-            <td><?= $unVisiteur['prenom'] ?></td>
-            <td><?= $unVisiteur['salle'] ?></td>
-            <td><?= $unVisiteur['horaire'] ?></td>
-            <td valign='middle'>
-                <?= form_open('/Agent/Visiteur/A_valider'); ?>
-                <?= form_hidden('idVisiteur', $unVisiteur['id']) ?>
-                <?= form_submit('', 'Est présent') ?>
-                <?= form_close(); ?>
-            </td>
-        </tr>
-    <?php } ?>
-</table>
+<div class="contenaire_search">
+    <div class="contenaire_input">
+        <label for="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+        <input type="text" name="search" id="search" placeholder="Rechercher un visiteur">
+    </div>
+</div>
+<div class="contenaire_resultat">
+    <div class="table">
+        <h3>Nom / Prenom</h3>
+        <h3>Salle</h3>
+        <h3>Horaire</h3>
+        <h3></h3>
+    </div>
+    <div class="table_resultat" id="table_resultat">
+
+        <!-- <?php /*var_dump($visiteursAValider);*/
+                /*foreach ($visiteursAValider as $unVisiteur) { ?>
+            <div class="table_items">
+                <h4><?= $unVisiteur['nom'] . " " . $unVisiteur['prenom'] ?></h4>
+                <h4><?= $unVisiteur['salle'] ?></h4>
+                <h4><?= $unVisiteur['horaire'] ?></h4>
+                <h4>
+                    <?= form_open('/Agent/Visiteur/A_valider'); ?>
+                    <?= form_hidden('idVisiteur', $unVisiteur['id']) ?>
+                    <?= form_submit('', 'Est présent') ?>
+                    <?= form_close(); ?>
+                </h4>
+
+            </div>
+        <?php } */ ?> -->
+    </div>
+
+</div>
+
+<?php include_once('../js/script_search.php') ?>

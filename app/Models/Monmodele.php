@@ -162,7 +162,7 @@ class MonModele extends Model
         // Jointure de la table presentation et reserver
         $builder->join('presentation', 'presentation.id = reserver.id_presentation');
         // Utilise la condition where si dans la champ 'est_present' est égal a 0
-        $builder->where('est-present', 0);
+        $builder->where('est_present', 0);
         //  Utilise la condition where si date de la presentation est égal a la date d'aujourd'hui
         //$builder->where('datee', now());
         return $builder->get()->getResultArray();

@@ -1,0 +1,498 @@
+ERROR - 2024-01-28 14:16:53 --> mysqli_sql_exception: Champ 'est-present' inconnu dans where clause in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `visiteu...', 0)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `visiteu...')
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `visiteu...')
+#3 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `visiteu...', Array, false)
+#4 C:\wamp64\www\Sites\GSB3\app\Models\Monmodele.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlAgent.php(62): App\Models\MonModele->getLesVisiteurAReserver()
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+#8 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-28 14:16:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'est-present' inconnu dans where clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `visiteur`.`id`, `visiteur`.`nom`, `prenom`, `salle`.`nom` as `salle`, `horaire`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`
+JOIN `presentation` ON `presentation`.`id` = `reserver`.`id_presentation`
+WHERE `est-present` = :est-present:', [...], false)
+ 2 APPPATH\Models\Monmodele.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CtrlAgent.php(62): App\Models\MonModele->getLesVisiteurAReserver()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 14:16:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'est-present' inconnu dans where clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `visiteur`.`id`, `visiteur`.`nom`, `prenom`, `salle`.`nom` as `salle`, `horaire`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`
+JOIN `presentation` ON `presentation`.`id` = `reserver`.`id_presentation`
+WHERE `est-present` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `visiteur`.`id`, `visiteur`.`nom`, `prenom`, `salle`.`nom` as `salle`, `horaire`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`
+JOIN `presentation` ON `presentation`.`id` = `reserver`.`id_presentation`
+WHERE `est-present` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `visiteur`.`id`, `visiteur`.`nom`, `prenom`, `salle`.`nom` as `salle`, `horaire`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`
+JOIN `presentation` ON `presentation`.`id` = `reserver`.`id_presentation`
+WHERE `est-present` = :est-present:', [...], false)
+ 4 APPPATH\Models\Monmodele.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\CtrlAgent.php(62): App\Models\MonModele->getLesVisiteurAReserver()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 14:16:53 --> [Caused by] mysqli_sql_exception: Champ 'est-present' inconnu dans where clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `visiteur`.`id`, `visiteur`.`nom`, `prenom`, `salle`.`nom` as `salle`, `horaire`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`
+JOIN `presentation` ON `presentation`.`id` = `reserver`.`id_presentation`
+WHERE `est-present` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `visiteur`.`id`, `visiteur`.`nom`, `prenom`, `salle`.`nom` as `salle`, `horaire`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`
+JOIN `presentation` ON `presentation`.`id` = `reserver`.`id_presentation`
+WHERE `est-present` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `visiteur`.`id`, `visiteur`.`nom`, `prenom`, `salle`.`nom` as `salle`, `horaire`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`
+JOIN `presentation` ON `presentation`.`id` = `reserver`.`id_presentation`
+WHERE `est-present` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `visiteur`.`id`, `visiteur`.`nom`, `prenom`, `salle`.`nom` as `salle`, `horaire`
+FROM `reserver`
+JOIN `visiteur` ON `visiteur`.`id` = `reserver`.`id_visiteur`
+JOIN `siege` ON `siege`.`id` = `reserver`.`id_siege`
+JOIN `salle` ON `salle`.`id` = `siege`.`salle_id`
+JOIN `presentation` ON `presentation`.`id` = `reserver`.`id_presentation`
+WHERE `est-present` = :est-present:', [...], false)
+ 5 APPPATH\Models\Monmodele.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CtrlAgent.php(62): App\Models\MonModele->getLesVisiteurAReserver()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:27:40 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:27:47 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:27:48 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:27:48 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:27:49 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:27:49 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:16 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:17 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:17 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:32 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:33 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:33 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:33 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:33 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:33 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:49 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:50 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:50 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:28:50 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:34:17 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 16:34:38 --> ErrorException: Array to string conversion
+in APPPATH\Views\vue_table_a_valider.php on line 41.
+ 1 APPPATH\Views\vue_table_a_valider.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 17:06:45 --> ErrorException: Undefined array key "idVisiteurAValider"
+in APPPATH\Views\vue_table_a_valider.php on line 77.
+ 1 APPPATH\Views\vue_table_a_valider.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVisiteurAValider"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 17:07:31 --> ErrorException: Undefined array key "idVisiteurAValider"
+in APPPATH\Views\vue_table_a_valider.php on line 77.
+ 1 APPPATH\Views\vue_table_a_valider.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVisiteurAValider"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 17:07:32 --> ErrorException: Undefined array key "idVisiteurAValider"
+in APPPATH\Views\vue_table_a_valider.php on line 77.
+ 1 APPPATH\Views\vue_table_a_valider.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVisiteurAValider"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 17:07:32 --> ErrorException: Undefined array key "idVisiteurAValider"
+in APPPATH\Views\vue_table_a_valider.php on line 77.
+ 1 APPPATH\Views\vue_table_a_valider.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVisiteurAValider"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 17:09:00 --> ErrorException: Undefined array key "idVisiteurAValider"
+in APPPATH\Views\vue_table_a_valider.php on line 77.
+ 1 APPPATH\Views\vue_table_a_valider.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVisiteurAValider"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 17:09:01 --> ErrorException: Undefined array key "idVisiteurAValider"
+in APPPATH\Views\vue_table_a_valider.php on line 77.
+ 1 APPPATH\Views\vue_table_a_valider.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idVisiteurAValider"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 5 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:32:24 --> ErrorException: include_once(script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:32:36 --> ErrorException: include_once(../script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(../script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:32:41 --> ErrorException: include_once(../../script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(../../script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:32:57 --> ErrorException: include_once(../../js/script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(../../js/script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:33:14 --> ErrorException: include_once(./js/script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(./js/script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:33:15 --> ErrorException: include_once(./js/script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(./js/script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:33:15 --> ErrorException: include_once(./js/script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(./js/script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:33:15 --> ErrorException: include_once(./js/script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(./js/script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-28 18:33:15 --> ErrorException: include_once(./js/script_search.php): Failed to open stream: No such file or directory
+in APPPATH\Views\vue_table_a_valider.php on line 38.
+ 1 APPPATH\Views\vue_table_a_valider.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(./js/script_search.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php', 38)
+ 2 APPPATH\Views\vue_table_a_valider.php(38): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_table_a_valider.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_table_a_valider', [], true)
+ 6 APPPATH\Controllers\CtrlAgent.php(65): view('vue_table_a_valider')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->aValiderAgent()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
