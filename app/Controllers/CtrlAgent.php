@@ -58,8 +58,39 @@ class CtrlAgent extends BaseController
         if (isset($_SESSION['matricule'])) {
             // Le titre dans l'onglet
             $data['title'] = "GSB3 | A Valier";
+            // La page où je suis
+            $data['page'] = "AValider";
+            // si c'est une methode post alors
+            if ($this->request->is('post')) {
+                // modification de la table reserver
+                $modele->setVisiteurEstPresent($_POST);
+            }
             // Recuperation les données des visiteur qui ont reserver une presentation
-            $data['visiteursAValider'] = $modele->getLesVisiteurAReserver();
+            $data['visiteursAValider'] = $modele->getLesVisiteurAValider();
+            return view('vue_entete', $data)
+                . view('vue_nav_agent')
+                . view('vue_table_a_valider');
+        } else {
+            return redirect()->to('/');
+        }
+    }
+
+    /**
+     * Renvoie vers la page des visiteur déjà valider
+     */
+    public function dejaValiderAgent()
+    {
+        $session = \Config\Services::session();
+        $modele = new \App\Models\MonModele();
+        session_start();
+        // Verification si c'est un agent
+        if (isset($_SESSION['matricule'])) {
+            // Le titre dans l'onglet
+            $data['title'] = "GSB3 | A Valier";
+            // La page où je suis
+            $data['page'] = "DejeValider";
+            // Recuperation les données des visiteur qui ont reserver une presentation
+            $data['visiteursAValider'] = $modele->getLesVisiteurDejaPresent();
             return view('vue_entete', $data)
                 . view('vue_nav_agent')
                 . view('vue_table_a_valider');

@@ -26,17 +26,34 @@
             const listItems = document.createElement("div");
             listItems.setAttribute("class", "table_items");
 
-            listItems.innerHTML = `
-            <h4>${visiteur.nom + " " + visiteur.prenom}</h4>
-            <h4>${visiteur.salle}</h4>
-            <h4>${visiteur.horaire}</h4>
-            <h4>
-                <form action='/Agent/Visiteur/A_valider' method='post'>
-                    <input type="hidden" name="idVisiteur" value="${visiteur.id}">
-                    <input type="submit" value="Est présent" id="bouton_aValider">
-                </form>
-            </h4>
-        `;
+
+            if (<?= isset($page) ?>) {
+                // Vérification si je dois afficher le bouton ou pas, si la page est la page A valider alors oui
+                if (<?= '"' . $page . '"' ?> == "AValider") {
+                    listItems.innerHTML = `
+                    <h4>${visiteur.nom + " " + visiteur.prenom}</h4>
+                    <h4>${visiteur.salle}</h4>
+                    <h4>${visiteur.horaire}</h4>
+                    <h4 class="bouton_est_present">
+                        <form action='/gsb3/public/index.php/Agent/Visiteur/A_valider' method='post'>
+                            <input type="hidden" name="horaireAValider" value="${visiteur.horaire}">
+                            <input type="hidden" name="idPresentationAValider" value="${visiteur.idPresentation}">
+                            <input type="hidden" name="idVisiteurAValider" value="${visiteur.id}">
+                            <input type="submit" value="Est présent" id="bouton_aValider">
+                        </form>
+                    </h4>
+                    `;
+                } else {
+                    listItems.innerHTML = `
+                    <h4>${visiteur.nom + " " + visiteur.prenom}</h4>
+                    <h4>${visiteur.salle}</h4>
+                    <h4>${visiteur.horaire}</h4>
+                    `;
+                }
+            }
+
+
+
             table_resultat.appendChild(listItems);
         });
     }

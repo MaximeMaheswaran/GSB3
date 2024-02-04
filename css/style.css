@@ -196,7 +196,7 @@ nav a:hover {
     text-align: start;
 }
 
-.table h3:nth-child(4) {
+.table .th_bouton_est_present {
     width: 15%;
 }
 
@@ -222,7 +222,7 @@ nav a:hover {
     align-items: center;
 }
 
-.table_items h4:nth-child(4) {
+.table_items .bouton_est_present {
     width: 15%;
     display: flex;
     align-items: center;
@@ -248,4 +248,5 @@ nav a:hover {
     border-radius: 20px;
     color: #fff;
     font-size: 1rem;
+    cursor: pointer;
 }

@@ -143,7 +143,36 @@ class MonModele extends Model
      * Recupere tout les visiteurs qui ont reserver une présentation mais ne se sont pas présenté
      * @return le nom, prenom, id des visiteurs, le nom de la salle et l'horaire
      */
-    public function getLesVisiteurAReserver()
+    public function getLesVisiteurAValider()
+    {
+        // Activer la fonctionnalité de codeigniter date
+        //helper('date');
+        // Connexion a la bdd
+        $db = $this->bdd();
+        // Choix du table
+        $builder = $db->table('reserver');
+        // Selection des champs besoins
+        $builder->select('visiteur.id,presentation.id as idPresentation, visiteur.nom, prenom, salle.nom as salle, horaire');
+        // Jointure de la table visiteur et reserver
+        $builder->join('visiteur', 'visiteur.id = reserver.id_visiteur');
+        // Jointure de la table siege et reserver
+        $builder->join('siege', 'siege.id = reserver.id_siege');
+        // Jointure de la table salle et siege
+        $builder->join('salle', 'salle.id = siege.salle_id');
+        // Jointure de la table presentation et reserver
+        $builder->join('presentation', 'presentation.id = reserver.id_presentation');
+        // Utilise la condition where si dans la champ 'est_present' est égal a 0
+        $builder->where('est_present', 0);
+        //  Utilise la condition where si date de la presentation est égal a la date d'aujourd'hui
+        //$builder->where('datee', now());
+        return $builder->get()->getResultArray();
+    }
+
+    /**
+     * Recupere tout les visiteurs qui ont reserver une présentation mais ne se sont pas présenté
+     * @return le nom, prenom, id des visiteurs, le nom de la salle et l'horaire
+     */
+    public function getLesVisiteurDejaPresent()
     {
         // Activer la fonctionnalité de codeigniter date
         //helper('date');
@@ -162,9 +191,30 @@ class MonModele extends Model
         // Jointure de la table presentation et reserver
         $builder->join('presentation', 'presentation.id = reserver.id_presentation');
         // Utilise la condition where si dans la champ 'est_present' est égal a 0
-        $builder->where('est_present', 0);
+        $builder->where('est_present', 1);
         //  Utilise la condition where si date de la presentation est égal a la date d'aujourd'hui
         //$builder->where('datee', now());
         return $builder->get()->getResultArray();
+    }
+
+    /**
+     * Modification du champ est présent pour dire le visiteur est présent
+     */
+    public function setVisiteurEstPresent($post)
+    {
+        // Connexion a la bdd
+        $db = $this->bdd();
+        // Choix du table
+        $builder = $db->table('reserver');
+        // Modification du champ est_présent
+        $builder->set('est_present', 1, false);
+        // Jointure de la table presentation et reserver
+        $builder->join('presentation', 'presentation.id = reserver.id_presentation');
+        // Utilise la condition where si le visiteur existe déjà
+        $builder->where('id_visiteur', $post['idVisiteurAValider']);
+        // Utilise la condition where si la presentation existe dans cette table
+        $builder->where('id_Presentation', $post['idPresentationAValider']);
+        //Envoyer la modification a la base de données
+        $builder->update();
     }
 }

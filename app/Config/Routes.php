@@ -23,4 +23,5 @@ $routes->post('/CtrlInformation/mettreAJourInformations', 'CtrlInformation::mett
 $routes->get('/Agent/Home', 'CtrlAgent::accueilAgent');
 $routes->get('/Agent/Moncompte', 'CtrlAgent::monCompteAgent');
 $routes->get('/Agent/Visiteur/A_valider', 'CtrlAgent::aValiderAgent');
-
+$routes->post('/Agent/Visiteur/A_valider', 'CtrlAgent::aValiderAgent');
+$routes->get('/Agent/Visiteur/Present', 'CtrlAgent::dejaValiderAgent');

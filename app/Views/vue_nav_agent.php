@@ -1,16 +1,17 @@
 <nav>
-    <?=anchor('/', 'Acceuil')?>
+    <?= anchor('/', 'Acceuil') ?>
     <div class="menu-item">
         <a href="#">Visiteur</a>
         <div class="sub-menu">
-            <?=anchor('/Agent/Visiteur/A_valider', 'A valider')?>
+            <?= anchor('/Agent/Visiteur/A_valider', 'A valider') ?>
+            <?= anchor('/Agent/Visiteur/Present', 'Présent') ?>
         </div>
     </div>
     <div class="menu-item">
-        <a href=""><?= session()->get('prenom')." ".session()->get('matricule')?></a>
+        <a href=""><?= session()->get('prenom') . " " . session()->get('matricule') ?></a>
         <div class="sub-menu">
-            <?=anchor('/Agent/Moncompte', 'Mon compte')?>
-            <?=anchor('deconnexion', 'Déconnexion') ?>
+            <?= anchor('/Agent/Moncompte', 'Mon compte') ?>
+            <?= anchor('deconnexion', 'Déconnexion') ?>
         </div>
-    </div> 
+    </div>
 </nav>
