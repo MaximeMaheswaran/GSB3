@@ -11,7 +11,7 @@ class CtrlInformation extends BaseController
         $data['modificationEnCours'] = false;
         $data['modele'] = $modele;
         $data['title'] = "GSB | Mon compte";
-        return view('vue_entete', $data) . view('vue_navigation') . view('vue_informationsPersonnelles', $data);
+        return view('vue_logo') . view('vue_entete', $data) . view('vue_navigation') . view('vue_informationsPersonnelles', $data);
     }
 
     public function modification()
@@ -28,10 +28,6 @@ class CtrlInformation extends BaseController
     {
         $modele = new \App\Models\ModeleInformations();
         $modele->setLesInformations($_POST);
-        $data['informations'] = $modele->getLesInformations(session()->get('id'));
-        $data['modificationEnCours'] = false;
-        $data['modele'] = $modele;
-        $data['title'] = "GSB | Mon compte";
-        return view('vue_entete', $data) . view('vue_navigation') . view('vue_informationsPersonnelles', $data);
+        return redirect()->to('Visiteur/Compte/');
     }
 }

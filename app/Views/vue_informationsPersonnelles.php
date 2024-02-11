@@ -1,7 +1,7 @@
 <br>
-<?php if ($modificationEnCours): ?>
+<?php if ($modificationEnCours) : ?>
     <!-- Formulaire de modification -->
-    <form action="<?= base_url('CtrlInformation/mettreAJourInformations') ?>" method="post">
+    <form action="<?= site_url('Visiteur/Compte/Modif/Maj') ?>" method="post">
         <fieldset>
             <legend>Modifier les informations</legend>
             <label for="nom">Nom:</label>
@@ -22,35 +22,35 @@
             <input type="submit" value="Valider">
         </fieldset>
     </form>
-<?php else: ?>
+<?php else : ?>
     <!-- Affichage des informations -->
     <fieldset>
         <legend>Informations personnelles</legend>
         <table>
             <tr>
                 <td>Nom:</td>
-                <td><?= $informations['nom']?></td>
+                <td><?= $informations['nom'] ?></td>
             </tr>
             <tr>
                 <td>Prénom:</td>
-                <td><?= $informations['prenom']?></td>
+                <td><?= $informations['prenom'] ?></td>
             </tr>
             <tr>
                 <td>Adresse:</td>
-                <td><?= $informations['adresse']?></td>
+                <td><?= $informations['adresse'] ?></td>
             </tr>
             <tr>
                 <td>Code postal:</td>
-                <td><?= $informations['cp']?></td>
+                <td><?= $informations['cp'] ?></td>
             </tr>
             <tr>
                 <td>Ville:</td>
-                <td><?= $informations['ville']?></td>
+                <td><?= $informations['ville'] ?></td>
             </tr>
         </table>
         <br>
         <!-- Bouton de modification -->
-        <form action="<?= base_url('CtrlInformation/activerModification') ?>" method="post">
+        <form action="<?= site_url('/Visiteur/Compte/Modif') ?>" method="post">
             <input type="submit" value="Modifier">
         </form>
     </fieldset>

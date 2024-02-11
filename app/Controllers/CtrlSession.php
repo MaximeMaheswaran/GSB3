@@ -17,7 +17,7 @@ class CtrlSession extends BaseController
     public function pageAccueil()
     {
         $data['title'] = "GSB | Accueil";
-        return view('vue_entete', $data) . view('vue_navigation');
+        return view('vue_logo') . view('vue_entete', $data) . view('vue_navigation');
     }
 
     public function deconnexion()

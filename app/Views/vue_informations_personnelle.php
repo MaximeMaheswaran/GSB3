@@ -25,7 +25,7 @@
         </table>
         <br>
         <!-- Bouton de modification -->
-        <form action="<?= base_url('CtrlInformation/activerModification') ?>" method="post">
+        <form action="<?= site_url('CtrlInformation/activerModification') ?>" method="post">
             <input type="submit" value="Modifier">
         </form>
     </fieldset>

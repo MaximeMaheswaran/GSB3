@@ -1,0 +1,90 @@
+ERROR - 2024-02-10 15:43:16 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\wamp64\www\Sites\GSB3\app\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlConferences.php(34): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '13')
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlConferences->inscription('7', '13')
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+#8 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 15:43:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlConferences.php(34): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->inscription('7', '13')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 15:43:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlConferences.php(34): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 15:43:16 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlConferences.php(34): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->inscription('7', '13')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-10 15:50:29 --> mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY' in C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Sites\GSB3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\wamp64\www\Sites\GSB3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\wamp64\www\Sites\GSB3\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\wamp64\www\Sites\GSB3\app\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Sites\GSB3\app\Controllers\CtrlConferences.php(34): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', Array, 'c3', '13')
+#6 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(941): App\Controllers\CtrlConferences->inscription('7', '13')
+#7 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+#8 C:\wamp64\www\Sites\GSB3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Sites\GSB3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-10 15:50:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 2 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CtrlConferences.php(34): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->inscription('7', '13')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 15:50:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 4 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CtrlConferences.php(34): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->inscription('7', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 15:50:29 --> [Caused by] mysqli_sql_exception: Duplicata du champ 'c3-7' pour la clef 'reserver.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (\'c3\', \'7\', \'13\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`) VALUES (:id_visiteur:, :id_presentation:, :id_siege:)', [...], false)
+ 5 APPPATH\Models\ModelePresentation.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CtrlConferences.php(34): App\Models\ModelePresentation->inscriptionPresentationPourUnePersonne('7', [...], 'c3', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->inscription('7', '13')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

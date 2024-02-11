@@ -1,9 +1,9 @@
 <?php
 $presentationsChunked = array_chunk($presentations, 3);
-foreach ($presentationsChunked as $group): ?>
+foreach ($presentationsChunked as $group) : ?>
     <div class="presentation-group">
-        <?php foreach ($group as $presentation): ?>
-            <a href="<?= base_url('presentation/detail/' . $presentation['id']) ?>" class="presentation-link">
+        <?php foreach ($group as $presentation) : ?>
+            <a href="<?= site_url('Conferences/Presentation/Detail/' . $presentation['id']) ?>" class="presentation-link">
                 <div class="presentation-item">
                     <strong>Conférence :</strong> <?= $modele->getNomConference($presentation['conference_id']) ?><br>
                     <strong>Date :</strong> <?= $presentation['datee'] ?><br>
