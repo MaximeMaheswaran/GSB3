@@ -214,6 +214,7 @@ CREATE TABLE `reserver` (
   `id_visiteur` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `id_presentation` int NOT NULL,
   `id_siege` int DEFAULT NULL,
+  `est_present` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_visiteur`,`id_presentation`),
   KEY `id_presentation` (`id_presentation`),
   KEY `id_siege` (`id_siege`),
@@ -221,6 +222,60 @@ CREATE TABLE `reserver` (
   CONSTRAINT `reserver_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`),
   CONSTRAINT `reserver_ibfk_3` FOREIGN KEY (`id_siege`) REFERENCES `siege` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`, `est_present`) VALUES
+('a131',	7,	1,	0),
+('a131',	8,	2,	0),
+('a17',	7,	1,	1);
+
+DELIMITER ;;
+
+DROP PROCEDURE IF EXISTS `getLesVisiteurPresentation`;;
+CREATE PROCEDURE `getLesVisiteurPresentation`(idPresentation int)
+BEGIN
+SELECT id_visiteur FROM reserver WHERE id_Presentation = idPresentation;
+END;;
+
+DROP PROCEDURE IF EXISTS `insert_historique`;;
+CREATE PROCEDURE `insert_historique`(idVisiteur CHAR(4), idPresentation INT)
+BEGIN
+    DECLARE v_theme NVARCHAR(255);
+    DECLARE v_datee DATE;
+    DECLARE v_horaire TIME;
+    DECLARE v_dureePrevue INT;
+    DECLARE v_salle_id INT;
+
+    SELECT theme, datee, horaire, dureePrevue, salle_id 
+    INTO v_theme, v_datee, v_horaire, v_dureePrevue, v_salle_id
+    FROM presentation, conference
+    WHERE presentation.conference_id = conference.id 
+    AND presentation.id = idPresentation;
+
+    INSERT INTO historique (id_visiteur, theme_conference, datee_presentation, horaire_presentation, dureePrevue_presentation, id_salle)
+    VALUES (idVisiteur, v_theme, v_datee, v_horaire, v_dureePrevue, v_salle_id);
+END;;
+
+DELIMITER ;
+
+SET NAMES utf8mb4;
+
+DROP TABLE IF EXISTS `historique`;
+CREATE TABLE `historique` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_visiteur` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `theme_conference` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `datee_presentation` date NOT NULL,
+  `horaire_presentation` time NOT NULL,
+  `dureePrevue_presentation` time NOT NULL,
+  `id_salle` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_visiteur` (`id_visiteur`),
+  KEY `id_salle` (`id_salle`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `historique` (`id`, `id_visiteur`, `theme_conference`, `datee_presentation`, `horaire_presentation`, `dureePrevue_presentation`, `id_salle`) VALUES
+(1,	'a131',	'Covid-19',	'2024-01-16',	'08:00:00',	'01:00:00',	1);
+
 
 /*
 
