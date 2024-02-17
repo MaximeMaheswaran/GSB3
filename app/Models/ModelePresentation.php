@@ -3,6 +3,9 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use CodeIgniter\Database\RawSql;
+
+helper('date');
 
 class ModelePresentation extends Model
 {
@@ -186,8 +189,6 @@ class ModelePresentation extends Model
 
         return $siegeReserve > 0;
     }
-
-
     /**
      * Recupere l'historique d'un visiteur
      * @param $idVisiteur
@@ -208,5 +209,81 @@ class ModelePresentation extends Model
         // Ordonee dans l'ordre le plus recente au plus acienne
         $builder->orderBy('datee_presentation', 'DESC');
         return $builder->get()->getResultArray();
+    }
+
+    public function getLesPresentationsTerminer()
+    {
+        // Connexion a la bdd
+        $db = $this->db;
+        // Choix du table
+        $builder = $db->table('presentation');
+        // Selection des champs besoins
+        $builder->select('id');
+        // Utilise la condition where pour voir si la date est passe
+        $builder->where('datee <', now());
+        return $builder->get()->getResultArray();
+    }
+
+    public function getLesReserverTerminer($idPresentation)
+    {
+        // Connexion a la bdd
+        $db = $this->db;
+        // Choix du table
+        $builder = $db->table('reserver');
+        // Selection des champs besoins
+        $builder->select('id_visiteur');
+        // Utilise la condition where pour recupere que les presentation terminer
+        $builder->where('id_presentation', $idPresentation);
+        return $builder->get()->getResultArray();
+    }
+
+    public function setHistorique($infos)
+    {
+        // Connexion a la bdd
+        $db = $this->db;
+        // Choix du table
+        $builder = $db->table('historique');
+        $data = [
+            'id_visiteur' => $infos[0]['id_visiteur'],
+            'id_presentation' => $infos[0]['id_presentation'],
+            'theme_conference' => $infos[0]['theme'],
+            'datee_presentation' => $infos[0]['datee'],
+            'horaire_presentation' => $infos[0]['horaire'],
+            'dureePrevue_presentation' => $infos[0]['dureePrevue'],
+            'id_salle' => $infos[0]['salle_id']
+        ];
+        // Inseret une nouvelle enregistrement
+        $builder->insert($data);
+    }
+
+    public function getInfosToHistorique($idVisiteur, $idPresentation)
+    {
+        // Connexion a la bdd
+        $db = $this->db;
+        // Choix du table
+        $builder = $db->table('reserver');
+        // Selection des champs besoins
+        $builder->select('id_visiteur, id_presentation, datee, horaire, dureePrevue, salle_id, theme');
+        // Jointure de la table presentation et reserver
+        $builder->join('presentation', 'presentation.id = reserver.id_presentation');
+        // Jointure de la table conference et presentation
+        $builder->join('conference', 'conference.id = presentation.conference_id');
+        // Utilise la condition where pour avoir que cet eregistrement reserver
+        $builder->where('reserver.id_visiteur', $idVisiteur);
+        // Utilise la condition where pour avoir que cet eregistrement reserver
+        $builder->where('reserver.id_presentation', $idPresentation);
+        return $builder->get()->getResultArray();
+    }
+
+    public function autoHistorique()
+    {
+        $idsPresentation = $this->getLesPresentationsTerminer();
+        foreach ($idsPresentation as $uneIdPresentation) {
+            $idsVisiteurs = $this->getLesReserverTerminer($uneIdPresentation);
+            foreach ($idsVisiteurs as $uneIdVisiteur) {
+                $info = $this->getInfosToHistorique($uneIdVisiteur, $uneIdPresentation);
+                $this->setHistorique($info);
+            }
+        }
     }
 }

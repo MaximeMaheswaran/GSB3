@@ -7,7 +7,10 @@ class Home extends BaseController
     public function index()
     {
         $session = \Config\Services::session();
+        $modele = new \App\Models\ModelePresentation();
         session_start();
+        // Automatiquement il historise les presentattion des visiteur;
+        $modele->autoHistorique();
         $ctrlConnexion = new \App\Controllers\Ctrlsession();
         // Verification si quelqu'un est connecter
         if (session()->get('is_logged') == true) {
