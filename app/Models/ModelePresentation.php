@@ -186,4 +186,27 @@ class ModelePresentation extends Model
 
         return $siegeReserve > 0;
     }
+
+
+    /**
+     * Recupere l'historique d'un visiteur
+     * @param $idVisiteur
+     * @return le theme, date, horaire, dureePrevue, salle
+     */
+    public function getHistoriqueVisiteur($id)
+    {
+        // Connexion a la bdd
+        $db = $this->db;
+        // Choix du table
+        $builder = $db->table('historique');
+        // Selection des champs besoins
+        $builder->select('theme_conference, datee_presentation, horaire_presentation, dureePrevue_presentation, salle.nom');
+        // Jointure de la table visiteur et reserver
+        $builder->join('salle', 'salle.id = historique.id_salle');
+        // Utilise la condition where pour avoir que cette visiteur
+        $builder->where('id_visiteur', $id);
+        // Ordonee dans l'ordre le plus recente au plus acienne
+        $builder->orderBy('datee_presentation', 'DESC');
+        return $builder->get()->getResultArray();
+    }
 }

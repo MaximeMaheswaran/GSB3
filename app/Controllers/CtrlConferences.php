@@ -61,4 +61,12 @@ class CtrlConferences extends BaseController
         $data['title'] = "GSB | Inscription";
         return view('vue_entete', $data) . view('vue_navigation') . view('vue_unePresentation', $data);
     }
+
+    public function historiqueVisiteur()
+    {
+        $modele = new \App\Models\ModelePresentation();
+        $data['historiques'] = $modele->getHistoriqueVisiteur(session()->get('id'));
+        $data['title'] = "GSB | Historique";
+        return view('vue_logo') . view('vue_entete', $data) . view('vue_navigation') . view('vue_historique');
+    }
 }

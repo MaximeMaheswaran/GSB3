@@ -19,6 +19,7 @@ $routes->get('/Conferences/inscription/(:num)', 'CtrlConferences::inscription/$1
 $routes->get('/Conferences/Presentation/Detail/Reserver/(:num)/(:num)', 'CtrlConferences::inscription/$1/$2');
 $routes->get('/Conferences/desinscription/(:num)', 'CtrlConferences::desinscription/$1');
 $routes->get('/Conferences/Presentation/Detail/Dereserver/(:num)/(:num)', 'CtrlConferences::desinscription/$1/$2');
+$routes->get('/Conferences/Historiques/', 'CtrlConferences::historiqueVisiteur');
 
 
 /*-----------------               -----------------------*/

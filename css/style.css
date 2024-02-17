@@ -250,3 +250,16 @@ nav a:hover {
     font-size: 1rem;
     cursor: pointer;
 }
+
+.contenaire_historique {
+    margin-top: 100px;
+}
+
+.tbl_historique h3{
+    text-align: center;
+}
+
+.tbl_items_historique h4 {
+    width: 100%;
+    justify-content: center;
+}

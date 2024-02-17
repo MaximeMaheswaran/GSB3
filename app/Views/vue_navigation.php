@@ -5,7 +5,7 @@
         <div class="sub-menu">
             <?= anchor('Conferences/Presentations', "Reserver") ?>
             <?= anchor('Conferences/MesReservation', "Mes Reservation") ?>
-            <?= anchor('Conferences/Presentations', "Historiques") ?>
+            <?= anchor('Conferences/Historiques', "Historiques") ?>
         </div>
     </div>
     <div class="menu-item">
