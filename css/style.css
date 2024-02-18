@@ -18,11 +18,13 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #2b7ffb;
+    margin-top: 50px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
+    width: 200px;
     padding: 10px 20px;
     display: inline-block;
     transition: background-color 0.3s;
@@ -47,20 +49,21 @@ nav a:hover {
     top: 100%;
     left: 0;
     background-color: #2b7ffb;
-    padding: 10px;
     border-radius: 0 0 5px 5px;
 }
 
 .sub-menu a {
     display: block;
-    padding: 5px;
     color: white;
     text-decoration: none;
 }
 
 .presentation-group {
     display: flex;
-    margin-bottom: 20px;
+    margin-top: 150px;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
 }
 
 .presentation-item {
@@ -78,6 +81,7 @@ nav a:hover {
 .box_img_logo {
     width: 100%;
     height: 100px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +96,7 @@ nav a:hover {
 
 .box_carte_connexion {
     width: 100%;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,9 +157,9 @@ nav a:hover {
 }
 
 .contenaire_input {
-    width:450px;
+    width: 450px;
     margin: 60px;
-    height:50px;
+    height: 50px;
     font-size: 20px;
     background-color: #f4f4f4;
     display: flex;
@@ -188,7 +193,7 @@ nav a:hover {
     width: 80%;
     display: flex;
     justify-content: center;
-    background-color:#5092f5;
+    background-color: #5092f5;
 }
 
 .table h3 {
@@ -206,11 +211,11 @@ nav a:hover {
 
 .table_items {
     width: 100%;
-    height:50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#f4f4f4;
+    background-color: #f4f4f4;
 
 }
 
@@ -255,11 +260,172 @@ nav a:hover {
     margin-top: 100px;
 }
 
-.tbl_historique h3{
+.tbl_historique h3 {
     text-align: center;
 }
 
 .tbl_items_historique h4 {
     width: 100%;
     justify-content: center;
+}
+
+/*********** card conference ********************/
+
+.card_c {
+    width: 350px;
+    height: 254px;
+    background: #2b7ffb;
+    transition: all 0.4s;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.card_c:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    background: rgb(103, 151, 255);
+}
+
+.first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.card_c:hover .first-content {
+    height: 0px;
+    opacity: 0;
+}
+
+.second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+}
+
+.second-content span {
+    width: 60%;
+    margin: 10px 0 10px 0;
+    text-align: left;
+}
+
+.card_c:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 15px;
+    transform: rotate(0deg);
+}
+
+
+/*********** info personnelle ******************/
+
+
+#form_info_personnelle {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.info_personnelle {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b7ffb;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.info_items {
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.info_1,
+.info_2 {
+    width: 30%;
+    text-align: left;
+}
+
+
+#info_btn_modif {
+    align-items: center;
+    appearance: none;
+    background-color: #2b7ffb;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+#info_btn_modif:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#info_btn_modif:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+#info_btn_modif:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.info_personnelle_modif .info_1,
+.info_personnelle_modif .info_2 {
+    width: 50%;
+}
+
+.info_personnelle_modif .info_2 input {
+    height: 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
 }

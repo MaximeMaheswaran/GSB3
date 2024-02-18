@@ -17,7 +17,7 @@ class MonModele extends Model
      * */
     public function estConnecte()
     {
-        return isset($_SESSION['is_logged']);
+        return session()->get('is_logged');
     }
 
     /**

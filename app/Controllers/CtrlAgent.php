@@ -16,7 +16,8 @@ class CtrlAgent extends BaseController
         if (isset($_SESSION['matricule'])) {
             // Le titre dans l'onglet
             $data['title'] = "GSB3 | Accueil";
-            return view('vue_entete', $data)
+            return view('vue_logo')
+                . view('vue_entete', $data)
                 . view('vue_nav_agent');
         } else {
             return redirect()->to('/');
@@ -38,9 +39,10 @@ class CtrlAgent extends BaseController
             $data['title'] = "GSB3 | Mon Compte";
             // Recuperation des donées de l'agent depuis la bdd
             $data['informations'] = $modele->getUnAgentId(session()->get('id'));
-            return view('vue_entete', $data)
+            return view('vue_logo')
+                . view('vue_entete', $data)
                 . view('vue_nav_agent')
-                . view('vue_informations_personnelle');
+                . view('vue_informations_personnelles');
         } else {
             return redirect()->to('/');
         }
@@ -67,7 +69,8 @@ class CtrlAgent extends BaseController
             }
             // Recuperation les données des visiteur qui ont reserver une presentation
             $data['visiteursAValider'] = $modele->getLesVisiteurAValider();
-            return view('vue_entete', $data)
+            return view('vue_logo')
+                . view('vue_entete', $data)
                 . view('vue_nav_agent')
                 . view('vue_table_a_valider');
         } else {
@@ -91,7 +94,8 @@ class CtrlAgent extends BaseController
             $data['page'] = "DejeValider";
             // Recuperation les données des visiteur qui ont reserver une presentation
             $data['visiteursAValider'] = $modele->getLesVisiteurDejaPresent();
-            return view('vue_entete', $data)
+            return view('vue_logo')
+                . view('vue_entete', $data)
                 . view('vue_nav_agent')
                 . view('vue_table_a_valider');
         } else {

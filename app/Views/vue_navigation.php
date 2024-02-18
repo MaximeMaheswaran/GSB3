@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="menu-item">
-        <a href="<?= site_url('information') ?>"><?= session()->get('prenom') ?></a>
+        <a href="<?= site_url('/Visiteur/Compte/') ?>"><?= session()->get('prenom') ?></a>
         <div class="sub-menu">
             <a href="<?= site_url('/Visiteur/Compte/') ?>">Mon compte</a>
             <a href="<?= site_url('deconnexion') ?>">Déconnexion</a>

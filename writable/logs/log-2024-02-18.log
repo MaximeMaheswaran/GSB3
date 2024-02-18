@@ -1,0 +1,199 @@
+CRITICAL - 2024-02-18 15:02:47 --> ErrorException: Undefined array key "conference_i"
+in APPPATH\Views\vue_presentations.php on line 18.
+ 1 APPPATH\Views\vue_presentations.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "conference_i"', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_presentations.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Sites\\GSB3\\app\\Views\\vue_presentations.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_presentations', [], true)
+ 5 APPPATH\Controllers\CtrlConferences.php(17): view('vue_presentations', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->afficherPresentations()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 16:52:45 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Monmodele.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-18 16:53:06 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Monmodele.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-18 16:53:50 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Monmodele.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-18 16:53:50 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Monmodele.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-18 16:53:50 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Monmodele.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-18 16:53:51 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Monmodele.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-18 16:53:51 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Monmodele.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-18 16:53:51 --> ErrorException: Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Models\Monmodele.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-18 16:54:13 --> ErrorException: ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\wamp64\\www\\Sites\\GSB3\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\wamp64\\www\\Sites\\GSB3\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '127.0.0.1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(982): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 APPPATH\Models\Monmodele.php(21): session()
+10 APPPATH\Controllers\CtrlInformation.php(10): App\Models\MonModele->estConnecte()
+11 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:00:11 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH\Controllers\CtrlConferences.php on line 11.
+ 1 APPPATH\Controllers\CtrlConferences.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlConferences.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->afficherPresentations()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:00:17 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH\Controllers\CtrlConferences.php on line 11.
+ 1 APPPATH\Controllers\CtrlConferences.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlConferences.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->afficherPresentations()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:00:17 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH\Controllers\CtrlConferences.php on line 11.
+ 1 APPPATH\Controllers\CtrlConferences.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlConferences.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->afficherPresentations()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:00:17 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH\Controllers\CtrlConferences.php on line 11.
+ 1 APPPATH\Controllers\CtrlConferences.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlConferences.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->afficherPresentations()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:00:17 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH\Controllers\CtrlConferences.php on line 11.
+ 1 APPPATH\Controllers\CtrlConferences.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlConferences.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->afficherPresentations()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:00:18 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH\Controllers\CtrlConferences.php on line 11.
+ 1 APPPATH\Controllers\CtrlConferences.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlConferences.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->afficherPresentations()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:00:18 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH\Controllers\CtrlConferences.php on line 11.
+ 1 APPPATH\Controllers\CtrlConferences.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\wamp64\\www\\Sites\\GSB3\\app\\Controllers\\CtrlConferences.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlConferences->afficherPresentations()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlConferences))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:06:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vue_informationsPersonnelles.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vue_informationsPersonnelles.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informationsPersonnelles', [], true)
+ 3 APPPATH\Controllers\CtrlInformation.php(19): view('vue_informationsPersonnelles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlInformation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlInformation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:07:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vue_informations_personnelle.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vue_informations_personnelle.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vue_informations_personnelle', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(43): view('vue_informations_personnelle')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 17:08:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "logo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('logo.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('logo', [], true)
+ 3 APPPATH\Controllers\CtrlAgent.php(42): view('logo')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CtrlAgent->monCompteAgent()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CtrlAgent))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
