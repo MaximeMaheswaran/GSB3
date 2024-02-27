@@ -11,7 +11,7 @@ class Home extends BaseController
         session_start();
         // Automatiquement il historise les presentattion des visiteur;
         $modele->autoHistorique();
-        $ctrlConnexion = new \App\Controllers\Ctrlsession();
+        $ctrlConnexion = new \App\Controllers\CtrlSession();
         // Verification si quelqu'un est connecter
         if (session()->get('is_logged') == true) {
             // Verification si c'est un visiteur qui est connecter
