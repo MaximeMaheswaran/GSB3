@@ -12,9 +12,9 @@ SET NAMES utf8mb4;
 DROP TABLE IF EXISTS `conference`;
 CREATE TABLE `conference` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `theme` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `theme` varchar(999)  DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 INSERT INTO `conference` (`id`, `theme`) VALUES
 (7,	'Covid-19');
@@ -24,13 +24,13 @@ INSERT INTO `conference` (`id`, `theme`) VALUES
 DROP TABLE IF EXISTS `personne`;
 CREATE TABLE `personne` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `prenom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `login` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `mdp` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `nom` varchar(50)  DEFAULT NULL,
+  `prenom` varchar(50)  DEFAULT NULL,
+  `login` varchar(50)  DEFAULT NULL,
+  `mdp` varchar(256)  DEFAULT NULL,
   `secretaire` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 INSERT INTO `personne` (`id`, `nom`, `prenom`, `login`, `mdp`, `secretaire`) VALUES
 (1,	'Calvo',	'Maxence',	'mcalvo',	'4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2',	1),
@@ -58,7 +58,7 @@ CREATE TABLE `animateur` (
   `id` int NOT NULL,
   KEY `id` (`id`),
   CONSTRAINT `animateur_ibfk_1` FOREIGN KEY (`id`) REFERENCES `personne` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 INSERT INTO `animateur` (`id`) VALUES
 (3),
@@ -73,7 +73,7 @@ CREATE TABLE `intervenant` (
   `id` int NOT NULL,
   KEY `id` (`id`),
   CONSTRAINT `intervenant_ibfk_1` FOREIGN KEY (`id`) REFERENCES `personne` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 
 
@@ -83,10 +83,10 @@ CREATE TABLE `intervenant` (
 DROP TABLE IF EXISTS `salle`;
 CREATE TABLE `salle` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `nom` varchar(50)  DEFAULT NULL,
   `capaciteMax` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 INSERT INTO `salle` (`id`, `nom`, `capaciteMax`) VALUES
 (1,	'D-203',	18),
@@ -98,7 +98,7 @@ DROP TABLE IF EXISTS `presentation`;
 CREATE TABLE `presentation` (
   `id` int NOT NULL AUTO_INCREMENT,
   `datee` date DEFAULT NULL,
-  `nbPersonneInscrite` int DEFAULT NULL,
+  `nbPlaceDispo` int DEFAULT NULL,
   `horaire` time DEFAULT NULL,
   `dureePrevue` time DEFAULT NULL,
   `salle_id` int DEFAULT NULL,
@@ -108,11 +108,7 @@ CREATE TABLE `presentation` (
   KEY `conference_id` (`conference_id`),
   CONSTRAINT `presentation_ibfk_1` FOREIGN KEY (`salle_id`) REFERENCES `salle` (`id`),
   CONSTRAINT `presentation_ibfk_2` FOREIGN KEY (`conference_id`) REFERENCES `conference` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-INSERT INTO `presentation` (`id`, `datee`, `nbPersonneInscrite`, `horaire`, `dureePrevue`, `salle_id`, `conference_id`) VALUES
-(7,	'2024-01-16',	8,	'08:00:00',	'01:00:00',	1,	7),
-(8,	'2024-01-17',	16,	'09:00:00',	'01:30:00',	2,	7);
+);
 
 DROP TABLE IF EXISTS `animer`;
 CREATE TABLE `animer` (
@@ -122,7 +118,7 @@ CREATE TABLE `animer` (
   KEY `presentation_id` (`presentation_id`),
   CONSTRAINT `animer_ibfk_1` FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`),
   CONSTRAINT `animer_ibfk_2` FOREIGN KEY (`animateur_id`) REFERENCES `animateur` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 DROP TABLE IF EXISTS `participer`;
 CREATE TABLE `participer` (
@@ -132,20 +128,20 @@ CREATE TABLE `participer` (
   KEY `presentation_id` (`presentation_id`),
   CONSTRAINT `participer_ibfk_1` FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`),
   CONSTRAINT `participer_ibfk_2` FOREIGN KEY (`intervenant_id`) REFERENCES `intervenant` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 DROP TABLE IF EXISTS `visiteur`;
 CREATE TABLE `visiteur` (
-  `id` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `nom` char(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `prenom` char(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `login` char(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `mdp` char(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `adresse` char(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `cp` char(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `ville` char(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `id` char(4)  NOT NULL,
+  `nom` char(30)  DEFAULT NULL,
+  `prenom` char(30)  DEFAULT NULL,
+  `login` char(20)  DEFAULT NULL,
+  `mdp` char(255)  DEFAULT NULL,
+  `adresse` char(30)  DEFAULT NULL,
+  `cp` char(5)  DEFAULT NULL,
+  `ville` char(30)  DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 INSERT INTO `visiteur` (`id`, `nom`, `prenom`, `login`, `mdp`, `adresse`, `cp`, `ville`) VALUES
 ('a131',	'Villechalane',	'Louis',	'lvillachane',	'ca3983640f22d6a38a0708731ac697146026828b88594f9522ae5517960bd56d',	'8 rue des Charmes',	'46000',	'Cahors'),
@@ -181,60 +177,46 @@ DROP TABLE IF EXISTS `siege`;
 CREATE TABLE `siege` (
   `id` int NOT NULL AUTO_INCREMENT,
   `salle_id` int DEFAULT NULL,
-  `visiteur_id` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `visiteur_id` char(4)  DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `salle_id` (`salle_id`),
   KEY `fk_siege_visiteur` (`visiteur_id`),
   CONSTRAINT `fk_siege_salle` FOREIGN KEY (`salle_id`) REFERENCES `salle` (`id`),
   CONSTRAINT `fk_siege_visiteur` FOREIGN KEY (`visiteur_id`) REFERENCES `visiteur` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ;
 
-INSERT INTO `siege` (`id`, `salle_id`, `visiteur_id`) VALUES
-(1,	1,	'a17'),
-(2,	1,	'a131'),
-(3,	1,	'a55'),
-(4,	1,	'b13'),
-(5,	1,	'e22'),
-(6,	1,	'b16'),
-(7,	1,	'b19'),
-(8,	1,	'b25'),
-(9,	1,	'b28'),
-(10,	1,	'b50'),
-(11,	1,	'b4'),
-(12,	1,	'c14'),
-(13,	1,	NULL),
-(14,	1,	NULL),
-(15,	1,	NULL),
-(16,	1,	NULL),
-(17,	1,	NULL),
-(18,	1,	NULL);
+DROP TABLE IF EXISTS `siege`;
+CREATE TABLE `siege` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `presentation_id` int DEFAULT NULL,
+  `visiteur_id` char(4) DEFAULT NULL,
+  `place_id` char(4)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`visiteur_id`) REFERENCES `visiteur` (`id`),
+  FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`)
+);
 
 DROP TABLE IF EXISTS `reserver`;
 CREATE TABLE `reserver` (
-  `id_visiteur` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `id_visiteur` char(4)  NOT NULL,
   `id_presentation` int NOT NULL,
-  `id_siege` int DEFAULT NULL,
+  `id_place` int DEFAULT NULL,
   `est_present` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_visiteur`,`id_presentation`),
   KEY `id_presentation` (`id_presentation`),
-  KEY `id_siege` (`id_siege`),
+  KEY `id_place` (`id_place`),
   CONSTRAINT `reserver_ibfk_1` FOREIGN KEY (`id_presentation`) REFERENCES `presentation` (`id`),
-  CONSTRAINT `reserver_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`),
-  CONSTRAINT `reserver_ibfk_3` FOREIGN KEY (`id_siege`) REFERENCES `siege` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `reserver_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`)
+) ;
 
-INSERT INTO `reserver` (`id_visiteur`, `id_presentation`, `id_siege`, `est_present`) VALUES
-('a131',	7,	1,	0),
-('a131',	8,	2,	0),
-('a17',	7,	1,	1);
 
 
 DROP TABLE IF EXISTS `historique`;
 CREATE TABLE `historique` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `id_visiteur` char(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `id_visiteur` char(4)  NOT NULL,
   `id_presentation` int NOT NULL,
-  `theme_conference` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `theme_conference` varchar(50) NOT NULL,
   `datee_presentation` date NOT NULL,
   `horaire_presentation` time NOT NULL,
   `dureePrevue_presentation` time NOT NULL,
@@ -243,7 +225,7 @@ CREATE TABLE `historique` (
   KEY `id_visiteur` (`id_visiteur`),
   KEY `id_salle` (`id_salle`),
   KEY `id_presentation` (`id_presentation`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 DELIMITER ;;
 

@@ -1,12 +1,12 @@
 <br><br>
 <?php
-$siegesIds = $modele->getTousLesSiegesDeUneSalle($presentation['salle_id']);
+$siegesIds = $modele->getTousLesSiegesDeUneSalle($presentation['id']);
 helper('html');
 
 // Vérifier si le visiteur a déjà une réservation dans cette salle
 $idVisiteur = session()->get('id');
-$idSalle = $presentation['salle_id'];
-$aUneReservation = $modele->aReservationDansUneSalle($idVisiteur, $idSalle);
+$idPresentation = $presentation['id'];
+$aUneReservation = $modele->aReservationDansUneSalle($idVisiteur, $idPresentation);
 
 // Afficher les images pour les sièges restants
 foreach ($siegesIds as $siegeId) {
@@ -14,7 +14,7 @@ foreach ($siegesIds as $siegeId) {
     $urlDesinscription = site_url('/Conferences/Presentation/Detail/Dereserver/' . $presentation['id'] . '/' . $siegeId);
 
     // Vérifier si le siège est déjà réservé
-    $estReserve = $modele->estSiegeReserve($presentation['salle_id'], $siegeId);
+    $estReserve = $modele->estSiegeReserve($presentation['id'], $siegeId);
 
     // Si le siège est déjà réservé
     if ($estReserve > 0) {

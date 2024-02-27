@@ -65,7 +65,7 @@ class CtrlConferences extends BaseController
             $modele = new \App\Models\ModelePresentation();
             $data['presentation'] = $modele->getUnePresentation($presentation_id);
             $data['salle_id'] = $modele->getTousLesSiegesDeUneSalle($data['presentation']['salle_id']);
-            $modele->inscriptionPresentationPourUnePersonne($presentation_id, $data['salle_id'], session()->get('id'), $siegeId);
+            $modele->inscriptionPresentationPourUnePersonne($presentation_id, session()->get('id'), $siegeId);
             $data['modele'] = $modele;
             $data['title'] = "GSB | Inscription";
             return view('vue_logo.php')
@@ -84,7 +84,7 @@ class CtrlConferences extends BaseController
             $modele = new \App\Models\ModelePresentation();
             $data['presentation'] = $modele->getUnePresentation($presentation_id);
             $data['salle_id'] = $modele->getTousLesSiegesDeUneSalle($data['presentation']['salle_id']);
-            $modele->desinscriptionPresentationPourUnePersonne($presentation_id, $data['salle_id'], session()->get('id'), $siegeId);
+            $modele->desinscriptionPresentationPourUnePersonne($presentation_id, session()->get('id'), $siegeId);
             $data['modele'] = $modele;
             $data['title'] = "GSB | Inscription";
             return view('vue_logo.php')

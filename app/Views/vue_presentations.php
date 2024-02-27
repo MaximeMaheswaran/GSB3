@@ -13,7 +13,7 @@ foreach ($presentationsChunked as $group) : ?>
                         <span><strong>Horaire :</strong> <?= $presentation['horaire'] ?></span>
                         <span><strong>Durée prévue :</strong> <?= $presentation['dureePrevue'] ?></span>
                         <span><strong>Salle :</strong> <?= $modele->getNomSalle($presentation['salle_id']) ?></span>
-                        <span><strong>Places restant :</strong> <?= $modele->getCapaciteMaxDeUneSalle($presentation['salle_id']) - $presentation['nbPersonneInscrite'] ?></span>
+                        <span><strong>Places restant :</strong> <?= $presentation['nbPlaceDispo'] ?></span>
                     </div>
                 </div>
             </a>

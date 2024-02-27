@@ -31,7 +31,7 @@ class ModelePresentation extends Model
         // Choix du table
         $builder = $db->table('reserver');
         // Selection des champs besoins
-        $builder->select('theme, id_presentation as id, datee, nbPersonneInscrite, horaire, dureePrevue, salle_id, conference_id');
+        $builder->select('theme, id_presentation as id, datee, nbPlaceDispo, horaire, dureePrevue, salle_id, conference_id');
         // Jointure de la table visiteur et reserver
         $builder->join('visiteur', 'visiteur.id = reserver.id_visiteur');
         // Jointure de la table presentation et reserver
@@ -90,13 +90,13 @@ class ModelePresentation extends Model
         $result = $db->table('reserver')
             ->where('id_visiteur', $idPersonne)
             ->where('id_presentation', $presentation_id)
-            ->where('id_siege', $siege_id)
+            ->where('id_place', $siege_id)
             ->countAllResults() > 0;
 
         return $result;
     }
 
-    public function inscriptionPresentationPourUnePersonne($presentation_id, $salle_id, $idPersonne, $siegeId)
+    public function inscriptionPresentationPourUnePersonne($presentation_id, $idPersonne, $siegeId)
     {
         $db = $this->db;
 
@@ -104,23 +104,24 @@ class ModelePresentation extends Model
         $data = [
             'id_visiteur' => $idPersonne,
             'id_presentation' => $presentation_id,
-            'id_siege' => $siegeId
+            'id_place' => $siegeId
         ];
         $db->table('reserver')->insert($data);
 
         // Mettre à jour la table siege pour indiquer que le siège est occupé par le visiteur
         $db->table('siege')
-            ->where('id', $siegeId)  // Utiliser l'ID du siège pour la condition where
+            ->where('place_id', $siegeId) // Utiliser l'ID du siège pour la condition where
+            ->where('presentation_id', $presentation_id) // Utiliser l'ID du siège pour la condition where
             ->update(['visiteur_id' => $idPersonne]);
 
-        // Mettre à jour la colonne nbPersonneInscrite dans la table presentation
+        // Mettre à jour la colonne nbPlaceDispo dans la table presentation
         $db->table('presentation')
             ->where('id', $presentation_id)
-            ->set('nbPersonneInscrite', 'nbPersonneInscrite + 1', false)
+            ->set('nbPlaceDispo', 'nbPlaceDispo - 1', false)
             ->update();
     }
 
-    public function desinscriptionPresentationPourUnePersonne($presentation_id, $salle_id, $idPersonne, $siegeId)
+    public function desinscriptionPresentationPourUnePersonne($presentation_id, $idPersonne, $siegeId)
     {
         $db = $this->db;
 
@@ -128,29 +129,29 @@ class ModelePresentation extends Model
         $db->table('reserver')
             ->where('id_presentation', $presentation_id)
             ->where('id_visiteur', $idPersonne)
-            ->where('id_siege', $siegeId)
+            ->where('id_place', $siegeId)
             ->delete();
 
         // Mettre à jour la table siege pour indiquer que le siège est maintenant disponible
         $db->table('siege')
-            ->where('id', $siegeId)
+            ->where('place_id', $siegeId)
+            ->where('presentation_id', $presentation_id)
             ->update(['visiteur_id' => null]);
 
-        // Mettre à jour la colonne nbPersonneInscrite dans la table presentation
+        // Mettre à jour la colonne nbPlaceDispo dans la table presentation
         $db->table('presentation')
             ->where('id', $presentation_id)
-            ->set('nbPersonneInscrite', 'nbPersonneInscrite - 1', false)
+            ->set('nbPlaceDispo', 'nbPlaceDispo + 1', false)
             ->update();
     }
 
-    public function aReservationDansUneSalle($idVisiteur, $idSalle)
+    public function aReservationDansUneSalle($idVisiteur, $idPresentation)
     {
         $db = $this->db;
 
         $query = $db->table('reserver')
-            ->join('presentation', 'presentation.id = reserver.id_presentation')
             ->where('reserver.id_visiteur', $idVisiteur)
-            ->where('presentation.salle_id', $idSalle)
+            ->where('id_presentation', $idPresentation)
             ->get();
 
         // Vérifier si une réservation existe
@@ -159,31 +160,31 @@ class ModelePresentation extends Model
 
 
 
-    public function getTousLesSiegesDeUneSalle($salle_id)
+    public function getTousLesSiegesDeUneSalle($presentation_id)
     {
         $db = $this->db;
 
         // Récupérer tous les sièges pour une salle donnée
         $sieges = $db->table('siege')
-            ->where('salle_id', $salle_id)
-            ->select('id')
+            ->select('place_id')
+            ->where('presentation_id', $presentation_id)
             ->get()
             ->getResultArray();
 
         // Extraire les IDs de la résultat sous forme de tableau simple
-        $siegesIds = array_column($sieges, 'id');
+        $siegesIds = array_column($sieges, 'place_id');
 
         return $siegesIds;
     }
 
-    public function estSiegeReserve($salle_id, $siege_id)
+    public function estSiegeReserve($presentation_id, $place_id)
     {
         $db = $this->db;
 
-        // Vérifier si le siège est réservé pour une salle donnée
+        // Vérifier si le siège est réservé pour une presentation donnée
         $siegeReserve = $db->table('siege')
-            ->where('salle_id', $salle_id)
-            ->where('id', $siege_id)
+            ->where('presentation_id', $presentation_id)
+            ->where('place_id', $place_id)
             ->where('visiteur_id IS NOT NULL') // Assurez-vous que le champ visiteur_id n'est pas NULL
             ->countAllResults();
 
