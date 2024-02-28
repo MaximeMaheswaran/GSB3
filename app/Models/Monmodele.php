@@ -199,6 +199,7 @@ class MonModele extends Model
 
     /**
      * Modification du champ est présent pour dire le visiteur est présent
+     * @param post
      */
     public function setVisiteurEstPresent($post)
     {
@@ -214,6 +215,28 @@ class MonModele extends Model
         $builder->where('id_visiteur', $post['idVisiteurAValider']);
         // Utilise la condition where si la presentation existe dans cette table
         $builder->where('id_Presentation', $post['idPresentationAValider']);
+        //Envoyer la modification a la base de données
+        $builder->update();
+    }
+    /**
+     * Modification du champ est présent pour dire le visiteur est présent
+     * @param idVisiteur
+     * @param idPresentation
+     */
+    public function setVisiteurEstPresentParam($idVisiteur, $idPresentation)
+    {
+        // Connexion a la bdd
+        $db = $this->bdd();
+        // Choix du table
+        $builder = $db->table('reserver');
+        // Modification du champ est_présent
+        $builder->set('est_present', 1, false);
+        // Jointure de la table presentation et reserver
+        $builder->join('presentation', 'presentation.id = reserver.id_presentation');
+        // Utilise la condition where si le visiteur existe déjà
+        $builder->where('id_visiteur', $idVisiteur);
+        // Utilise la condition where si la presentation existe dans cette table
+        $builder->where('id_Presentation', $idPresentation);
         //Envoyer la modification a la base de données
         $builder->update();
     }

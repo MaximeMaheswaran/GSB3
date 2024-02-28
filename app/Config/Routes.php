@@ -30,6 +30,7 @@ $routes->post('/Visiteur/Compte/Modif/Maj', 'CtrlInformation::mettreAJourInforma
 /*-------------- Agent -----------------*/
 $routes->get('/Agent/Home', 'CtrlAgent::accueilAgent');
 $routes->get('/Agent/Moncompte', 'CtrlAgent::monCompteAgent');
+$routes->get('/Agent/Visiteur/A_Valider/(:num)/(:num)', 'CtrlAgent::aValiderParam/$1/$2');
 $routes->get('/Agent/Visiteur/A_valider', 'CtrlAgent::aValiderAgent');
 $routes->post('/Agent/Visiteur/A_valider', 'CtrlAgent::aValiderAgent');
 $routes->get('/Agent/Visiteur/Present', 'CtrlAgent::dejaValiderAgent');

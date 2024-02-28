@@ -87,10 +87,10 @@ class ModelePresentation extends Model
     {
         $db = $this->db;
 
-        $result = $db->table('reserver')
-            ->where('id_visiteur', $idPersonne)
-            ->where('id_presentation', $presentation_id)
-            ->where('id_place', $siege_id)
+        $result = $db->table('siege')
+            ->where('visiteur_id', $idPersonne)
+            ->where('presentation_id', $presentation_id)
+            ->where('place_id', $siege_id)
             ->countAllResults() > 0;
 
         return $result;
@@ -286,5 +286,20 @@ class ModelePresentation extends Model
                 $this->setHistorique($info);
             }
         }
+    }
+
+    public function getSonSiege($idVisiteur, $idPresentation)
+    {
+        // Connexion a la bdd
+        $db = $this->db;
+        // Choix du table
+        $builder = $db->table('siege');
+        // Selection des champs besoins
+        $builder->select('place_id');
+        // Utilise la condition where pour trouver la presentation
+        $builder->where('presentation_id', $idPresentation);
+        // Utilise la condition where pour trouver le visteur
+        $builder->where('visiteur_id', $idVisiteur);
+        return $builder->get()->getResultArray();
     }
 }
