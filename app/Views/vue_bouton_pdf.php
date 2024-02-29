@@ -9,7 +9,7 @@
     require_once '../phpqrcode/qrlib.php';
 
     // Données que vous souhaitez inclure dans le code QR
-    $data = site_url("/Agent/Visiteur/A_Valider/" . $presentation['id'] . "/" . $sonSiege[0]['place_id'] . "");
+    $data = site_url("/Agent/Visiteur/A_Valider/" . $presentation['id'] . "/" . session()->get('id') . "");
 
     $number = rand(65196191, 9461649491);
     // Nom du fichier image du code QR à générer

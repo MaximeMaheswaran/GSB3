@@ -155,12 +155,10 @@ class MonModele extends Model
         $builder->select('visiteur.id,presentation.id as idPresentation, visiteur.nom, prenom, salle.nom as salle, horaire');
         // Jointure de la table visiteur et reserver
         $builder->join('visiteur', 'visiteur.id = reserver.id_visiteur');
-        // Jointure de la table siege et reserver
-        $builder->join('siege', 'siege.id = reserver.id_siege');
-        // Jointure de la table salle et siege
-        $builder->join('salle', 'salle.id = siege.salle_id');
         // Jointure de la table presentation et reserver
         $builder->join('presentation', 'presentation.id = reserver.id_presentation');
+        // Jointure de la table salle et presentation
+        $builder->join('salle', 'salle.id = presentation.salle_id');
         // Utilise la condition where si dans la champ 'est_present' est égal a 0
         $builder->where('est_present', 0);
         //  Utilise la condition where si date de la presentation est égal a la date d'aujourd'hui
@@ -184,12 +182,10 @@ class MonModele extends Model
         $builder->select('visiteur.id, visiteur.nom, prenom, salle.nom as salle, horaire');
         // Jointure de la table visiteur et reserver
         $builder->join('visiteur', 'visiteur.id = reserver.id_visiteur');
-        // Jointure de la table siege et reserver
-        $builder->join('siege', 'siege.id = reserver.id_siege');
-        // Jointure de la table salle et siege
-        $builder->join('salle', 'salle.id = siege.salle_id');
         // Jointure de la table presentation et reserver
         $builder->join('presentation', 'presentation.id = reserver.id_presentation');
+        // Jointure de la table salle et presentation
+        $builder->join('salle', 'salle.id = presentation.salle_id');
         // Utilise la condition where si dans la champ 'est_present' est égal a 0
         $builder->where('est_present', 1);
         //  Utilise la condition where si date de la presentation est égal a la date d'aujourd'hui

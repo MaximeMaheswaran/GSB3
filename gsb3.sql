@@ -1,13 +1,3 @@
--- Adminer 4.8.1 MySQL 8.2.0 dump
-
-SET NAMES utf8;
-SET time_zone = '+00:00';
-SET foreign_key_checks = 0;
-SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
-
-SET NAMES utf8mb4;
-
-
 
 DROP TABLE IF EXISTS `conference`;
 CREATE TABLE `conference` (
@@ -108,7 +98,20 @@ CREATE TABLE `presentation` (
   KEY `conference_id` (`conference_id`),
   CONSTRAINT `presentation_ibfk_1` FOREIGN KEY (`salle_id`) REFERENCES `salle` (`id`),
   CONSTRAINT `presentation_ibfk_2` FOREIGN KEY (`conference_id`) REFERENCES `conference` (`id`)
-);
+) ;
+
+DELIMITER ;;
+
+CREATE TRIGGER `deletePresentation` BEFORE DELETE ON `presentation` FOR EACH ROW
+BEGIN 
+DELETE FROM animer
+WHERE presentation_id = old.id;
+
+DELETE FROM siege
+WHERE presentation_id = old.id;
+
+END;;
+
 
 DROP TABLE IF EXISTS `animer`;
 CREATE TABLE `animer` (
@@ -178,35 +181,29 @@ CREATE TABLE `siege` (
   `id` int NOT NULL AUTO_INCREMENT,
   `salle_id` int DEFAULT NULL,
   `visiteur_id` char(4)  DEFAULT NULL,
+  `place_id` char(4) DEFAULT NULL,
+  `presentation_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `salle_id` (`salle_id`),
   KEY `fk_siege_visiteur` (`visiteur_id`),
+  KEY `presentation_id` (`presentation_id`),
   CONSTRAINT `fk_siege_salle` FOREIGN KEY (`salle_id`) REFERENCES `salle` (`id`),
-  CONSTRAINT `fk_siege_visiteur` FOREIGN KEY (`visiteur_id`) REFERENCES `visiteur` (`id`)
-) ;
-
-DROP TABLE IF EXISTS `siege`;
-CREATE TABLE `siege` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `presentation_id` int DEFAULT NULL,
-  `visiteur_id` char(4) DEFAULT NULL,
-  `place_id` char(4)  DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  FOREIGN KEY (`visiteur_id`) REFERENCES `visiteur` (`id`),
-  FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`)
+  CONSTRAINT `fk_siege_visiteur` FOREIGN KEY (`visiteur_id`) REFERENCES `visiteur` (`id`),
+  CONSTRAINT `siege_ibfk_1` FOREIGN KEY (`presentation_id`) REFERENCES `presentation` (`id`)
 );
 
 DROP TABLE IF EXISTS `reserver`;
 CREATE TABLE `reserver` (
-  `id_visiteur` char(4)  NOT NULL,
+  `id_visiteur` char(4) NOT NULL,
   `id_presentation` int NOT NULL,
-  `id_place` int DEFAULT NULL,
+  `id_siege` int DEFAULT NULL,
   `est_present` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_visiteur`,`id_presentation`),
   KEY `id_presentation` (`id_presentation`),
-  KEY `id_place` (`id_place`),
+  KEY `id_siege` (`id_siege`),
   CONSTRAINT `reserver_ibfk_1` FOREIGN KEY (`id_presentation`) REFERENCES `presentation` (`id`),
-  CONSTRAINT `reserver_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`)
+  CONSTRAINT `reserver_ibfk_2` FOREIGN KEY (`id_visiteur`) REFERENCES `visiteur` (`id`),
+  CONSTRAINT `reserver_ibfk_3` FOREIGN KEY (`id_siege`) REFERENCES `siege` (`id`)
 ) ;
 
 
@@ -227,6 +224,22 @@ CREATE TABLE `historique` (
   KEY `id_presentation` (`id_presentation`)
 ) ;
 
+INSERT INTO `historique` (`id`, `id_visiteur`, `id_presentation`, `theme_conference`, `datee_presentation`, `horaire_presentation`, `dureePrevue_presentation`, `id_salle`) VALUES
+(1,	'a131',	7,	'Covid-19',	'2024-01-16',	'08:00:00',	'01:00:00',	1),
+(2,	'a17',	7,	'Covid-19',	'2024-01-16',	'08:00:00',	'01:00:00',	1),
+(3,	'a131',	8,	'Covid-19',	'2024-01-17',	'09:00:00',	'01:30:00',	2),
+(4,	'c3',	9,	'Covid-19',	'2024-06-01',	'07:00:00',	'00:00:00',	1),
+(5,	'c3',	9,	'Covid-19',	'2024-06-01',	'07:00:00',	'00:00:00',	1),
+(6,	'c3',	9,	'Covid-19',	'2024-06-01',	'07:00:00',	'00:00:00',	1),
+(7,	'c3',	9,	'Covid-19',	'2024-06-01',	'07:00:00',	'00:00:00',	1),
+(8,	'c3',	9,	'Covid-19',	'2024-06-01',	'07:00:00',	'00:00:00',	1),
+(9,	'c3',	9,	'Covid-19',	'2024-06-01',	'07:00:00',	'00:00:00',	1),
+(10,	'c3',	10,	'Covid-19',	'2024-01-01',	'07:00:00',	'00:00:00',	1),
+(11,	'c3',	10,	'Covid-19',	'2024-01-01',	'07:00:00',	'00:00:00',	1),
+(12,	'c3',	10,	'Covid-19',	'2024-01-01',	'07:00:00',	'00:00:00',	1),
+(13,	'c3',	10,	'Covid-19',	'2024-01-01',	'07:00:00',	'00:00:00',	1),
+(14,	'c3',	10,	'Covid-19',	'2024-01-01',	'07:00:00',	'00:00:00',	1);
+
 DELIMITER ;;
 
 CREATE TRIGGER `autoHistorique` AFTER INSERT ON `historique` FOR EACH ROW
@@ -234,9 +247,11 @@ BEGIN
 	DELETE FROM reserver
         WHERE id_visiteur = NEW.id_visiteur
         AND id_presentation = NEW.id_presentation;
-END;;
+        
+        DELETE FROM presentation
+        WHERE datee < DATE( NOW() );
 
-DELIMITER ;
+END;;
 
 /*
 

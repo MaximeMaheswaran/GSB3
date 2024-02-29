@@ -104,7 +104,7 @@ class ModelePresentation extends Model
         $data = [
             'id_visiteur' => $idPersonne,
             'id_presentation' => $presentation_id,
-            'id_place' => $siegeId
+            'id_siege' => $siegeId
         ];
         $db->table('reserver')->insert($data);
 
@@ -129,7 +129,7 @@ class ModelePresentation extends Model
         $db->table('reserver')
             ->where('id_presentation', $presentation_id)
             ->where('id_visiteur', $idPersonne)
-            ->where('id_place', $siegeId)
+            ->where('id_siege', $siegeId)
             ->delete();
 
         // Mettre à jour la table siege pour indiquer que le siège est maintenant disponible
@@ -221,7 +221,7 @@ class ModelePresentation extends Model
         // Selection des champs besoins
         $builder->select('id');
         // Utilise la condition where pour voir si la date est passe
-        $builder->where('datee <', now());
+        $builder->where('datee <', date('Y-m-d', now()));
         return $builder->get()->getResultArray();
     }
 
@@ -279,11 +279,13 @@ class ModelePresentation extends Model
     public function autoHistorique()
     {
         $idsPresentation = $this->getLesPresentationsTerminer();
-        foreach ($idsPresentation as $uneIdPresentation) {
-            $idsVisiteurs = $this->getLesReserverTerminer($uneIdPresentation);
-            foreach ($idsVisiteurs as $uneIdVisiteur) {
-                $info = $this->getInfosToHistorique($uneIdVisiteur, $uneIdPresentation);
-                $this->setHistorique($info);
+        if (count($idsPresentation) > 0) {
+            foreach ($idsPresentation as $uneIdPresentation) {
+                $idsVisiteurs = $this->getLesReserverTerminer($uneIdPresentation);
+                foreach ($idsVisiteurs as $uneIdVisiteur) {
+                    $info = $this->getInfosToHistorique($uneIdVisiteur, $uneIdPresentation);
+                    $this->setHistorique($info);
+                }
             }
         }
     }

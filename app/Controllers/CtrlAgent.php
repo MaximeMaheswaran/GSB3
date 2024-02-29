@@ -94,11 +94,8 @@ class CtrlAgent extends BaseController
             $data['title'] = "GSB3 | A Valier";
             // La page où je suis
             $data['page'] = "AValider";
-            // si c'est une methode post alors
-            if ($this->request->is('post')) {
-                // modification de la table reserver
-                $modele->setVisiteurEstPresentParam($idVisiteur, $idPresentation);
-            }
+            // modification de la table reserver
+            $modele->setVisiteurEstPresentParam($idVisiteur, $idPresentation);
             // Recuperation les données des visiteur qui ont reserver une presentation
             $data['visiteursAValider'] = $modele->getLesVisiteurAValider();
             return view('vue_logo')
