@@ -35,7 +35,7 @@ class MonModele extends Model
             'login' => $post['login'],
             'mdp' => hash('sha256', $post['mdp'])
         ];
-        // Choix du table
+        // Choix de la table
         $builder = $db->table('visiteur');
         // Utilise la condition where puis compte et renvoie le nombre d'enregistrement
         $count = $builder->where($data)->countAllResults();
@@ -75,7 +75,7 @@ class MonModele extends Model
             'login' => $post['login'],
             'mdp' => hash('sha256', $post['mdp'])
         ];
-        // Choix du table
+        // Choix de la table
         $builder = $db->table('personne');
         // Selection d'un champ de la agent
         $builder->select('matricule');
@@ -104,7 +104,7 @@ class MonModele extends Model
             'login' => $post['login'],
             'mdp' => hash('sha256', $post['mdp'])
         ];
-        // Choix du table
+        // Choix de la table
         $builder = $db->table('personne');
         // Selection des champs besoins
         $builder->select('personne.id, matricule, nom, prenom');
@@ -128,7 +128,7 @@ class MonModele extends Model
         $data = [
             'personne.id' => $id,
         ];
-        // Choix du table
+        // Choix de la table
         $builder = $db->table('personne');
         // Selection des champs besoins
         $builder->select('personne.id, matricule, nom, prenom');
@@ -149,7 +149,7 @@ class MonModele extends Model
         //helper('date');
         // Connexion a la bdd
         $db = $this->bdd();
-        // Choix du table
+        // Choix de la table
         $builder = $db->table('reserver');
         // Selection des champs besoins
         $builder->select('visiteur.id,presentation.id as idPresentation, visiteur.nom, prenom, salle.nom as salle, horaire');
@@ -176,7 +176,7 @@ class MonModele extends Model
         //helper('date');
         // Connexion a la bdd
         $db = $this->bdd();
-        // Choix du table
+        // Choix de la table
         $builder = $db->table('reserver');
         // Selection des champs besoins
         $builder->select('visiteur.id, visiteur.nom, prenom, salle.nom as salle, horaire');
@@ -201,7 +201,7 @@ class MonModele extends Model
     {
         // Connexion a la bdd
         $db = $this->bdd();
-        // Choix du table
+        // Choix de la table
         $builder = $db->table('reserver');
         // Modification du champ est_présent
         $builder->set('est_present', 1, false);
@@ -223,7 +223,7 @@ class MonModele extends Model
     {
         // Connexion a la bdd
         $db = $this->bdd();
-        // Choix du table
+        // Choix de la table
         $builder = $db->table('reserver');
         // Modification du champ est_présent
         $builder->set('est_present', 1, false);
